@@ -109,8 +109,8 @@ body
 
 #rollover a:hover
 {
-	background-color: #206A50;
-	color: white;
+/* 	background-color: #206A50; */
+	color: #206A50;
 }
 
 header
