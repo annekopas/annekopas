@@ -108,9 +108,9 @@ body
 }
 
 #rollover a:hover
-{
-/* 	background-color: #206A50; */
-	color: #206A50;
+ {
+	background-color: #206A50;
+	color: white;
 }
 
 header
@@ -232,8 +232,8 @@ main a:visited
 
 main a:hover
 {
-	color: white;
-	background-color: #D16455;
+	color: #206A50;
+/* 	background-color: #D16455; */
 }
 
 main li
@@ -308,8 +308,8 @@ footer a:visited
 
 footer a:hover
 {
-	color: white;
-	background-color: #D16455;
+	color: #206A50;
+/* 	background-color: #D16455; */
 }
 
 footer div a:hover
