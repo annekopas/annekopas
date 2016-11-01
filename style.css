@@ -1,0 +1,495 @@
+/* RESET DEFAULT BROWSER STYLES */
+/* These styles will clear all of the default styles 
+and give you a clean playing field for developing
+your own style */
+/***** DO NOT CHANGE THESE STYLES *****/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img { border: none; }
+
+/***  END OF RESET DEFAULT BROWSER STYLES ***/
+
+/** .CLEARING resets floating elements **/
+
+.clear { clear: both; }
+
+
+/** BEGIN WRITING YOUR CSS SPECIFICATIONS **/
+
+* {
+	box-sizing: border-box;
+	}
+
+body
+{
+	background-color: #80BDAD;
+	font-family: verdana, helvetica, sans-serif;
+	letter-spacing: 0px;
+}
+
+#wrapper
+{
+	width: 1100px;
+	margin: 30px auto;
+	background-color: #206A50;
+}
+
+#rollover
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 100%;
+	color: white;
+	background-color: #594027;
+	float: left;
+}
+
+#rollover li { display: inline; }
+/* don't delete this! */
+
+#rollover li a
+{
+	float: left;
+	color: white;
+	background-color: #594027;
+	padding: 0.3em 10px;
+	text-decoration: none;
+	border-right: 1px solid white;
+	font-size: 14px;
+}
+
+#rollover a:hover
+{
+	background-color: #206A50;
+	color: white;
+}
+
+header
+{
+	width: 100%;
+	height: 170px;
+	background-color: #206A50;
+	background-image: url(img/panorama.jpg);
+	background-size: 100%;
+	background-position: 0 20%;
+}
+
+header h1
+{
+	font-size: 40px;
+	line-height: 40px;
+	margin: 0;
+	font-family: verdana, sans-serif;
+	color: white;
+	padding: 65px 50px 65px 50px;
+	text-align: left;
+} 
+
+
+#sidebar
+{
+	width: 250px;
+	padding: 20px;
+	background-color: #206A50;
+	float: left;
+	color: white;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+#sidebar h2
+{
+	font-size: 24px;
+	line-height: 24px;
+	color: white;
+}
+
+#sidebar a
+{
+	color: #D16455;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#sidebar ul
+{
+	list-style-type: disc; 
+	margin: 0 0 0.25em 0.25em;
+	line-height: 16px;
+}
+
+main
+{
+	width: 850px;
+	padding: 30px;
+	background-color: #FFF;
+	float: left;
+	border-right: 1px #594027 solid;
+	border-left: 1px #594027 solid;
+	border-bottom: 1px #594027 solid;
+}
+
+main#wide
+{
+	width: 100%;
+}
+
+main p
+{
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 25px;
+	text-indent: 0px;
+}
+
+main h1, h2, h3
+{
+	margin: 0 0 0.50em 0;
+	color: #206A50;
+}
+
+main h1
+{
+	font-size: 36px;
+	line-height: 36px;
+}
+
+main h2
+{
+	font-size: 24px;
+	line-height: 24px;
+}
+
+main h3
+{
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 14px;
+}
+
+main a 
+{
+	color: #D16455;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+main a:visited
+{
+	color: #80BDAD;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+main a:hover
+{
+	color: white;
+	background-color: #D16455;
+}
+
+main li
+{
+	font-size: 14px;
+	line-height: 24px;
+	margin-left: 2em;
+}
+
+main ol
+{
+	list-style-type: decimal;
+	margin: 0 0 0 0.25em 0;
+}
+
+main ul
+{
+	list-style-type: disc; 
+	margin: 0 0 0 0.25em 0;
+}
+
+main li ul
+{
+	list-style-type: circle;
+}
+
+main li ol
+{
+	list-style-type: lower-alpha;
+}
+
+main strong
+{
+	color: #206A50;
+}
+
+.imgright
+{
+	float: right;
+	margin: 20px 0px 3px 20px;
+}
+
+.imgleft
+{
+	float: left;
+	margin: 20px 0 0px 20px;
+}
+
+footer
+{
+	width: 100%;
+	height: 95px;
+	display: block;
+	padding: 10px;
+	background-color: #206A50;
+	float: left;
+}
+
+footer a 
+{
+	color: #D16455;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer a:visited
+{
+	color: #80BDAD;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer a:hover
+{
+	color: white;
+	background-color: #D16455;
+}
+
+footer div a:hover
+{
+	background-color: transparent;
+}
+
+footer p
+{
+	font-size: 13px;
+	line-height: 23px;
+	margin-bottom: 13px;
+	text-indent: 0px;
+	color: white;
+}
+
+
+/* directions: top right bottom left */
+
+.imgright p
+{
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 13px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+hr 
+{ 
+	background-color: #206A50; 
+    height: 7px;
+    width: 100%;
+    border-bottom: 3px solid #594027;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0px; 
+} 
+
+
+.socialicons
+{
+	letter-spacing: 5px;
+}
+
+/*@font-face {
+  font-family: "socicon";
+  src:url("fonts/socicon.eot");
+  src:url("fonts/socicon.eot?#iefix") format("embedded-opentype"),
+    url("fonts/socicon.woff") format("woff"),
+    url("fonts/socicon.ttf") format("truetype"),
+    url("fonts/socicon.svg#socicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+/* RESUME STYLE GOES HERE */
+
+#resume
+{
+	border: 1px solid black;
+	margin: 30px auto;
+	padding: 30px;
+	width: 670px;
+	background-color: white;
+}
+
+.topbottom
+{
+	text-align: center;
+}
+
+.topbottom p
+{
+	margin: 0;
+}
+
+.title
+{
+	width: 200px;
+	float: left;
+	padding: 20px 0 0 0;
+	margin-top: 20px;
+	border-top: 1px solid #206A50;
+}
+
+.info
+{
+	width: 400px;
+	float: left;
+	padding: 20px 0 0 0;
+	margin-top: 20px;
+	border-top: 1px solid #206A50;
+}
+
+#resume p
+{
+	font-size: 12px;
+	line-height: 22px;
+	margin-bottom: 22px;
+	text-indent: 0px;
+}
+
+#resume h1, h2, h3
+{
+	margin: 0.5em 0 0.25em 0;
+	color: #206A50;
+}
+
+#resume h1
+{
+	font-size: 36px;
+	line-height: 36px;
+}
+
+#resume h2
+{
+	font-size: 24px;
+	line-height: 24px;
+}
+
+#resume h3
+{
+	font-size: 18px;
+	line-height: 18px;
+	margin-left: 14px;
+}
+
+#resume a 
+{
+	color: #D16455;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#resume a:visited
+{
+	color: #80BDAD;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#resume a:hover
+{
+	color: white;
+	background-color: #D16455;
+}
+
+#resume li
+{
+	font-size: 12px;
+	line-height: 22px;
+	margin-left: 2em;
+}
+
+#resume ol
+{
+	list-style-type: decimal;
+	margin: 0 0 0 0.25em 0;
+}
+
+#resume ul
+{
+	list-style-type: disc; 
+	margin: 0 0 0 0.25em 0;
+}
+
+#resume li ul
+{
+	list-style-type: circle;
+}
+
+#resume li ol
+{
+	list-style-type: lower-alpha;
+}
+
+#resume strong
+{
+	color: #206A50;
+}
+
+/* END RESUME STYLE */
