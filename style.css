@@ -63,22 +63,6 @@ a img { border: none; }
 
 
 /** BEGIN WRITING YOUR CSS SPECIFICATIONS **/
-@font-face {
-    font-family: Handlee;
-    src: url(https://fonts.googleapis.com/css?family=Handlee) format('truetype'),
-         url(https://fonts.googleapis.com/css?family=Handlee) format('woff');
-}
-
-@font-face {
-  font-family: "Handlee";
-  src:url(https://fonts.googleapis.com/css?family=Handlee);
-  src:url("fonts/socicon.eot?#iefix") format("embedded-opentype"),
-    url("fonts/socicon.woff") format("woff"),
-    url("fonts/socicon.ttf") format("truetype"),
-    url("fonts/socicon.svg#socicon") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
 * {
 	box-sizing: border-box;
 	}
