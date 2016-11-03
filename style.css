@@ -505,7 +505,8 @@ hr
 /* Goodreads widget style */
 
 .gr_grid_container {
-	/* customize grid container div here. eg: width: 500px; */
+	padding-top: 5px;
+	position: center;
 }
 
 .gr_grid_book_container {
