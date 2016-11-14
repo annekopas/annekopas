@@ -128,14 +128,14 @@ header
 
 header h1
 {
-	font-size: 60px;
-	line-height: 60px;
-	margin: 0;
-	font-family: 'Poiret One', sans-serif;
-	color: white;
-	padding: 65px 50px 65px 50px;
-	text-align: left;
-	font-weight: bold;
+    font-size: 75px;
+    line-height: 75px;
+    margin: 0;
+    font-family: 'Poiret One', sans-serif;
+    color: white;
+    padding: 55px 50px 65px 50px;
+    text-align: left;
+    font-weight: bold;
 } 
 
 
