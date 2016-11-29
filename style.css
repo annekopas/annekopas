@@ -76,8 +76,8 @@ body
 
 #wrapper
 {
-	width: 1100px;
-	margin: 30px auto;
+	width: 100%;
+	margin: none;
 	background-color: #206A50;
 }
 
@@ -92,10 +92,7 @@ body
 	float: left;
 }
 
-#rollover li { 
-	display: inline; 
-	font-family: 'Poiret One', sans-serif;
-}
+#rollover li { display: inline; }
 /* don't delete this! */
 
 #rollover li a
@@ -106,8 +103,7 @@ body
 	padding: 0.3em 10px;
 	text-decoration: none;
 	border-right: 1px solid white;
-	font-size: 1.15em;
-    	font-weight: bold;
+	font-size: 14px;
 }
 
 #rollover a:hover
@@ -116,11 +112,48 @@ body
 	color: white;
 }
 
+#nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 3px dotted #594027;
+  border-bottom: 3px dotted #594027;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+}
+
+.navbox {
+  flex-wrap: wrap;
+  background-color: #594027;
+  width: 15%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.navbox a {
+  font-family: 'Poiret One', sans-serif;
+  display: inline-block;
+  color: white;
+  font-size: 1.45em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbox a:hover {
+	text-shadow: 3px 3px #206A50;
+}
+
 header
 {
 	width: 100%;
-	height: 170px;
+	height: 205px;
 	background-color: #206A50;
+	background-repeat: no-repeat;
+	background-image-height: 100%;
 	background-image: url(https://lh3.googleusercontent.com/vx-3gGQiUEEoWhU6Spottb6Frei1ny0_jy1qQQcVinwgVlgYD3LisS8iJ7bqq2lpCUMABOhzKl3vrbb4KR7hpWrg3Ji16vOiZpvBNlA08bBEw4Le9knsm_pMNJTXlZPm_uQ38-H2NnSCLTSpKaI-GIwmrD873wMx2VBJcoKPvosFCZCMn0xA_pxs0CYH-TCZcy53AvZpVin62SFQl78BuDhPHcy-8NN8t9vdVJEWq0aegw16T6zCibb3Rqexvc6kTr0rF7GEHiyc4tWxxcnQsC3KM1i5nAGfGAdmI0kVfhqiQEnQT4xH8Xd_thRrzY-nKYHsLRk-ieVLL1eWT5NazE6jzZhfqiLFHRWwK0S8kW_jTdGlvQgYtYprlxe4q6cQTGUC-GRw27A_Ag7QlfSZTe3cs8a8d-GlTiBDEqhjjtMtyQadKzmUx0raag70-WGlFUCr8rq1GzDuSRsmou-qFhjzRM2cML8Be7GHOXA0Fejw6-IVrz4GddOXnG7QRd9fuhIFYwMXcABHNb_iDIGiFVUwC2_wuf9cYqr_tx6zYPJ4FwTsYnXJ2pJIK-2EqZynvsO8DxysAdpSzoQECsWox0O0OcnvD8N8QIRByQk9nBSHuaLd=w1367-h368-no);
 	background-size: 100%;
 	background-position: 0 20%;
@@ -128,44 +161,62 @@ header
 
 header h1
 {
-    font-size: 75px;
-    line-height: 75px;
-    margin: 0;
-    font-family: 'Poiret One', sans-serif;
-    color: white;
-    padding: 55px 50px 65px 50px;
-    text-align: left;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #594027;
+	font-size: 7em;
+	line-height: 0.5em;
+	margin: 0;
+	font-family: 'Poiret One', sans-serif;
+	padding: 30px 50px 25px 50px;
+	text-align: center;
+	font-weight: 5px;
+	text-shadow: 3px 3px 3px white;
+} 
+
+header h1 a {
+	text-decoration: none;
+	color: #594027;
+}
+
+header h2
+{
+	font-size: 30px;
+	line-height: 25px;
+	margin: 0;
+	font-family: 'Poiret One', sans-serif;
+	color: white;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 2px 2px #594027;
 } 
 
 
 #sidebar
 {
-	width: 250px;
+/*	width: 20%;*/
 	padding: 20px;
-	background-color: #206A50;
+/*	background-color: #206A50;*/
+	background-color: white;
 	float: left;
-	color: white;
+	color: black;
 	font-size: 13px;
 	line-height: 16px;
 }
 
 #sidebar h2
 {
+	font-family: 'Poiret One', sans-serif;
 	font-size: 24px;
 	line-height: 24px;
-	color: white;
-	font-family: 'Poiret One', sans-serif;
+	color: #206A50;;
 }
 
 #sidebar h3
 {
+	font-family: 'Poiret One', sans-serif;
 	font-size: 18px;
 	line-height: 18px;
-	color: white;
+	color: #206A50;;
 	margin-bottom: 4px;
-	font-family: 'Poiret One', sans-serif;
 }
 
 #sidebar a
@@ -184,12 +235,10 @@ header h1
 
 main
 {
-	width: 850px;
+	width: 100%;
 	padding: 30px;
 	background-color: #FFF;
 	float: left;
-	border-right: 1px #594027 solid;
-	border-left: 1px #594027 solid;
 	border-bottom: 1px #594027 solid;
 }
 
@@ -208,9 +257,9 @@ main p
 
 main h1, h2, h3
 {
+	font-family: 'Poiret One', sans-serif;
 	margin: 0 0 0.50em 0;
 	color: #206A50;
-	font-family: 'Poiret One', sans-serif;
 }
 
 main h1
@@ -515,7 +564,6 @@ hr
 .gr_grid_container {
 	padding-top: 5px;
 	position: center;
-	width: 95%;
 }
 
 .gr_grid_book_container {
