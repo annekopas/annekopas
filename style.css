@@ -420,6 +420,11 @@ hr
 	letter-spacing: 5px;
 }
 
+.socialicons a:hover
+{
+	text-shadow: blue 5px 5px;
+}
+
 /*@font-face {
   font-family: "socicon";
   src:url("fonts/socicon.eot");
