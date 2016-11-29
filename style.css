@@ -420,9 +420,9 @@ hr
 	letter-spacing: 5px;
 }
 
-.socialicons a:hover
+.socialicons img:hover
 {
-	text-shadow: blue 5px 5px;
+	color: blue;
 }
 
 /*@font-face {
