@@ -375,9 +375,6 @@ footer a:hover
 {
 	color: white;
 /* 	background-color: #D16455; */
-	-moz-box-shadow: 0 0 10px #ccc; 
-	-webkit-box-shadow: 0 0 10px #ccc; 
-	box-shadow: 0 0 10px #ccc;
 }
 
 footer div a:hover
@@ -423,12 +420,6 @@ hr
 	letter-spacing: 5px;
 }
 
-.socialicons img:hover
-{
-	-moz-box-shadow: 0 0 10px #ccc; 
-	-webkit-box-shadow: 0 0 10px #ccc; 
-	box-shadow: 0 0 10px #ccc;
-}
 
 /*@font-face {
   font-family: "socicon";
