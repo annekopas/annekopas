@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- no content goes in this section -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="anne kopas, st. thomas">
+	<meta name="description" content="Website of Anne Kopas">
+	<meta name="author" content="Anne Kopas">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<title>Anne Kopas</title>
+
+</head>
+
+
+	<?php include('header.php') ?>
+<!-- div id="wrapper">
+
+<header background-img="https://lh3.googleusercontent.com/vx-3gGQiUEEoWhU6Spottb6Frei1ny0_jy1qQQcVinwgVlgYD3LisS8iJ7bqq2lpCUMABOhzKl3vrbb4KR7hpWrg3Ji16vOiZpvBNlA08bBEw4Le9knsm_pMNJTXlZPm_uQ38-H2NnSCLTSpKaI-GIwmrD873wMx2VBJcoKPvosFCZCMn0xA_pxs0CYH-TCZcy53AvZpVin62SFQl78BuDhPHcy-8NN8t9vdVJEWq0aegw16T6zCibb3Rqexvc6kTr0rF7GEHiyc4tWxxcnQsC3KM1i5nAGfGAdmI0kVfhqiQEnQT4xH8Xd_thRrzY-nKYHsLRk-ieVLL1eWT5NazE6jzZhfqiLFHRWwK0S8kW_jTdGlvQgYtYprlxe4q6cQTGUC-GRw27A_Ag7QlfSZTe3cs8a8d-GlTiBDEqhjjtMtyQadKzmUx0raag70-WGlFUCr8rq1GzDuSRsmou-qFhjzRM2cML8Be7GHOXA0Fejw6-IVrz4GddOXnG7QRd9fuhIFYwMXcABHNb_iDIGiFVUwC2_wuf9cYqr_tx6zYPJ4FwTsYnXJ2pJIK-2EqZynvsO8DxysAdpSzoQECsWox0O0OcnvD8N8QIRByQk9nBSHuaLd=w1367-h368-no">
+	<h1><a href="index.html">anne marie kopas</a></h1>
+	<h2>writer - editor - web designer</h2>
+	<div id="nav">
+<div class="navbox">
+<a href="index.html">about</a>
+</div>
+<div class="navbox">
+<a href="resume.html">resumé</a>
+</div>
+<div class="navbox">
+<a href="coursework.html">coursework</a>
+</div>
+<div class="navbox">
+<a href="accomplishments.html">accomplishments</a>
+</div>
+<div class="navbox">
+<a href="experience.html">experience</a>
+</div>
+<div class="navbox">
+<a href="blog.html">blog</a>
+<!</div> -->
+
+</div><!--nav-->
+
+</div>
+</header> -->
+
+
+<div class="clear"></div> 
+
+<main id="wide">
+
+<h2>The Epic, the Awesome, and the Random</h2>
+	<p>
+		Recent posts | <a href="http://anniesepicblog.blogspot.com" target="_blank">Full Site</a>
+	</p>
+	<center>
+
+<!-- content goes here -->
+
+<!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://anniesepicblog.blogspot.com/feeds/posts/default",rssmikle_frame_width: "1068",rssmikle_frame_height: "700",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Verdana, Arial, sans-serif",rssmikle_font_size: "15",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#206A50",rssmikle_title_color: "#206A50",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#206A50",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "on",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "html",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:1068px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
+	</center>
+</main>
+
+<div class="clear"></div>
+
+
+<footer>
+	<p>
+		&copy; Anne Kopas, 2016.  Email me at <a href="mailto:anne.kopas@gmail.com">annekopas@gmail.com</a>.  Header photo: Banff National Park, Alberta, Canada.
+	</p>
+<div class="a:hover">
+	<div class="socialicons">
+	<a href="https://www.facebook.com/annie.kopas" target="_blank">
+		<img src="https://lh3.googleusercontent.com/QuL3oGCprxG2Cb_2avE3To_dT6wSGsUTGBHvbW7Ti-bJXCHUkS8oeNFytS0RqoUZEIAeJTe0szK8gs_b1fX7GyFBR3wJt_cY5Wc5I8ZI12ShYZKARsK6AWhL-FejBp2cbts3w_66lTHP21xeOqQOnZldUj2c6SNzqvymYIdNBOMajw4ycW7gDrNP--4IfX0CwX3pch2KKdB6btq8pcynsqD7dMh0X2-XBltrZ5TjmgUK-QYrDM7ifS2jBfkoYygitwrOreR9Lki7lIZuehBaKNvwxhk_pLSyyTea_GNF8h6C1O0euyUHYIUtUfKui2wvLYLSKcfQX2u5XzVRG-vLHTO7253V3tzHXsO8sfSA2vgq4gJ6Toiwz0i0Ug4gybxzVpFuNFNkD8UilC-KO0eD_l2g_0rjJtJMM0AoC9IjVjPN31J4tgS8cmrGyDg_gwlVSxT5GuFZG84VcR6MHTAoGf7x2FIjgPsai2tTnLQyYtMe5mAnvKV91lavEIlCTBk9Gvta9mwlCtgnmxLGdyDLWDRYoVUCEHz4ipl63Od-HmZ4sOQHKXsCaw7yIUN7M9anbGm4tJn-IvgUirMgC_U4ZiPXd047FiM72j91ElOXcL7OO4d4=s75-no" title="Facebook" alt="Facebook icon" height="36" width="36">
+	</a>
+	<a href="https://www.linkedin.com/in/anne-kopas" target="_blank">
+		<img src="https://lh3.googleusercontent.com/k-kklF0IgccziItt4s5BLIUrbV66hq206N11VxXjorPc_40eGYj_deisLX-_O4aBkp_xyMqkBjXDae8aUegFwUGzb7hIsqc0NlGYK4Cco1F1P9KeQdfH4msOkqOLu5Cr2jwFJq4MJEqwZg7B6pKaj5pQ8qC3e8_SrkCgpgMKnM2TNH8-DpBVvaJjajdJ92jw2iUsglnGsKwYKl7AASNqlc3ivLaR2ZZbHg1zWS3xE5ZTYcgUCMloOewJYkhIaoARfeQk-sWpOwlVoMx78QsHhCnbWX9_xDTE0nuc_LWSXxFZWR1kV3_sjUSIBfyJvEL3WUmJ2wvuDJm5Igvt1yL_LGDAS17PC-Yv_7UdWCNhJVWJdNG5yyryKOvNKFqAHTGYeoUPpYMp9PaaP31a9STBt2sIFhz3vUj6RhTdIi7eagIRGACPqp7Mpb9my-vzmWuw92FWKmER6LBZA9P7c4d4JUqw7SGaWkvetKpCodHqfMgjd0JWNCT8FOu0l01EDHM0mbpDk8HbLTkxRUVblS58bwmErdkHC0lflcgW4oCICe6F18AS-lqN4mhTrmjtJhoKXpYvqUS65jgV_fwBluJpTKhRdv3yTA1XwBbmjiwMswOsbEZj=s75-no" title="LinkedIn" alt="LinkedIn icon" height="36" width="36">
+	</a>
+	<a href="https://twitter.com/annekopas" target="_blank">
+		<img src="https://lh3.googleusercontent.com/5aK3322okdCWq4OvMKe21wmDib6geXTbOAVZ8pyKIUBFICCIGlmaXsfVHx7sY26d2yfEf8_-QJirOUGzUKomlJH46TQN9hC1mt77QstqWCq79DCscVBbeWn2CEwbeF9WPBDjxJT1DgjfPIyDuM67rG7j9WfmeSSeLAjVltJrwo3MQw68qIIBlGOTQ659i0uE1pN5dMaypuHpByZz-D8iwddRk6OcANZ6y5VqT5WgQ1TJWzWcAvEgvR-Vs1FuwoJGWKS1VvFQBPSIb-qZydhJUBk0HPSNyn5FUZxTc05pbqFv3XM-DmnzLudV-dw9U0RO4XpQURFa6F6potZM0Rfr-fg-R9QS7tVyrFo2STwhnd80uOucLGMlnWR3ArHWUXAql8vNpw_FGB_lAReWAd3WRaunrWypQ7RdfLXpfoDKXOC6z_QZ7Zah0ez1urgjH4ImqmLqXymb8UV_EHm1AUreJqfhYFxTsi4_YWyoGfWyjxM5-2WO0oXIw8ldJLSuOPjXsAef9FtFS_w7kDR7ys1Gbd5Te6uRxPOix_DDIFcy17luMiBbpgoE__ag9hAZiRY3fEnqDg6f2208imXtPfUPDrTXyWkB2vGWgFciO3B8W58YZBDS=s75-no" title="Twitter" alt="Twitter icon" height="36" width="36">
+	</a>
+	<a href="https://www.pinterest.com/theanniek/" target="_blank">
+		<img src="https://lh3.googleusercontent.com/B3nZSrNB3js48iq0gDLsncnBhdj3ktHEnpzNvUzZy3D9hiFq83z4Z0devJ8dbMGmxgXXUpTVOYjZK6QloslKRfdXcP_GO6fgXC32O6DxQZLjdCa7xcE63s5fjeCykkxF5nNSWgZM87mio8k1VAY9Dspwqom39GD_K5TUSvOwqZygSoluRP9KRSdLhaZddHXxewngcT04pGZ48wp5jlzf5ZPqmQphf1Cyg9mM-xWj60xo9RiQ1XK7BOiZ_hbpcnkQ5dyLpcq0Qkrcwjd0yclqKc6VGIs7Y82yC6xyE36Svb5adhjrLcVcJuwPgmPSkYrMNtBlWewbNL8bn2StcMvpJgY4GBTOusbj3BDhu2KxJ6-MQH7wEqz4IsG38_atyXceqtQ4lrIzuBG2fYZZlkQ_fLXhbWlfw7M62nx1WDVzJ4f4Wm4kLsGGi0kfVm8jmUFLpoNqpQBN-eF0d1fgzuU6MiKeNCZqPCmfTW3gHOx7GZgZJ-E8N2vuLkEVXB_eOv7s6YW4foi3pkP6w9_45I-HFhJEx6Fhctatbcl4d47SknYk0G78jZcKSFWVqFJ9pBVmU_QjCLpnlBcJcmJpaspB6uV9DzZhoGWQr4B3agCxrYkKa3Sb=s75-no" title="Pinterest" alt="Pinterest icon" height="36" width="36">
+	</a>
+	<a href="https://www.instagram.com/anniekopas/" target="_blank">
+		<img src="https://lh3.googleusercontent.com/gFwK_KFe8s1BgQI8pZowH9Oz9CKeRPF3T2F-I1_Nof1jhK3c3s78QfdkyA9GuMLVijyT5rFwNaFkZ-3fX7IDF-WIsMI-4OiX7Lb5GzEElydEWxFanp5153Y6M7QAcEfGBTVGsZtSJqLxwvZVAdgLF37hrSQA1EbmtBiCvI_SFe2QGQT3vYzMc8-zuCBQEyoArhqGuvjYmMfRDq1x5YiLTadQcuDss8Gvu_AMHRsaoySaGXG87ShewVe3qE7GWeR-q3GzPMqZnK0O7d1e7biCoV0Xz0JS3d7UFzvfqb-LaRZriA066TnTFSlaVYaByTGi1cQVpG9qsYWcDGTsbHaJ23L5v03-CHp9QYPlUWAOW23INdfB9lxHzI-jm89HrvSl7rsDMGaqr39WiXXYR1QsgQNWi9Teo3QxS49_7jV2TOXEVvJW9kwtrdApd5uuVlIhfggGEnAheAyJ4DkkX1Pb_UX-HW7wS44Ds7WmV4qtyVBXx82I0lVTk2CpI1LAu52A03bB1zrs_wlUAvjsMFuhNxd41RHV_JwDPsw0g83uEEfzNyWHz1RCV_m2ZGH-fR2aJwOsA8nIXcRtgkuvO5OMS-Gmol8xn31CZZwcGLDT46gbmYQT=s75-no" title="Instagram" alt="instagram icon" height="36" width="36">
+	</a>
+	<a href="https://www.goodreads.com/user/show/3984780-annie" target="_blank">
+		<img src="https://lh3.googleusercontent.com/OT2KabYmZ73m07g_fhJqFKHPJ4UVEivAEdRnMZvbsJnNWzwWC0EAchzI4MBZtSmBSRbjqokawNpBWBMVxxHYkZjj-ypxpQrcoKcw-X4oF813apuoqAgK8XMXHn4RICu1QG-cmPGgR2Reatlwv8m5sAZG5fQHzODNxgy0TFQpP80227ZocsSS7NjBSkoJQpSj7ULJREffPL1G2kCcN0GTbqDljlIKHw7lFoOBxlMrIr1JM3NJAMOvoy63BqOu0iz5wNCtYMxU7AbSFo7j_FX_9PUlzTPU1wflIgegBoTgcmclrBA3eI1NxiQOf1yFJdwBKvfABAS5OMI_2JUWqj5hlwVFkZIDy32cgNxxLMxGvFmrgUujVmXqumX_zGqaYmxOpUOoYz5N2wV5Us2krKEjlC1-AFfzzKnR0u_g7I-l9NH-xapASzMJFL6aNededJvMoeCkERwtwvq67759vI_DmpwX-5YkXWv6vmyZcNLzRTXmmVEGsgmPGwNGXuCQeippwY4PbYlRySkRib7knYJ1qXnfFF4BuDqQGrIAyhCBYFUOZ0rRIa7uEQrBs_g0olU8I2sWM2OFsCLN0vSLzQ-LuYKbRiikGLKD-VYsymRd9k4-sDAK=s75-no" title="Goodreads" alt="Goodreads icon" height="36" width="36">
+	</a>
+	<a href="https://open.spotify.com/user/theanniemarie" target="_blank">
+		<img src="https://lh3.googleusercontent.com/fKuyxIiKU1B2_PvBIl1YXiA3-eElOak9QwkcARbjFaKL75mNAQzCv4AZkpZRHzt2Ij20ffB9Qx9YzP1g1P9W_sdB1eayYQS8waJFI4c5nxR9EkxvflZ7Im-S3W8WYE1s8EUAl-OLqeLzmYrURLSNiGsPnbCc4r7ZX4Ij8Yh3Y7N8k0jVmQsktbss62RiXZdbO80gpNk17lPgYASLdydp3lg4-io24YXE9qvZLVB1DtJIeAkbACj1GJj09p8Ll2mDRylT7cqLLPEHRgOb0TCsEd0mzquC7cn7b2apOtW_oqT7sgaGagyCD6tlVeUygAKz0d7FHH_m2MZbC_NP0yHNyKdmH_RMcQfVAa2ApP56faFXrShxsYM7HE5zTRYfEzYvfLlfNPgYGO4Vvv5GiCVIM-zoScLKywYS4j8c6DfpZLRPSQfNEzEJl6gJ03_8YHlU4QybedL4BRTxplKEmiM7HUaEG5FiLicg7fNCI9Uno3XXHsWJrdJN5fAjKFBGA3vtt7-1wxv3W_Ikf2qrgJBazLguhvAu5dyCmLWf8dCK8ex2ppGz6nr2_IX8Ug_q-ugcHEgyzcbIbA_c4EOXvAKxVXkAV50nCS7wnv6_OoA-Uv9xcTo2=s75-no" title="Spotify" alt="Spotify icon" height="36" width="36">
+	</a>
+	<a href="http://anniesepicblog.blogspot.com" target="_blank">
+		<img src="https://lh3.googleusercontent.com/_V9NyR9wzQLsDEqYQnwl3x9QtOTQT_B9_x4CazP66-6kFrCo2WgR1tyPtNyf6fjLFd4_AH1eVCTqC2PFbxRrmzJm3kbMcJ2epB9sM0ov395_hXoFxredj9HhE-D8jaM1nUk9PYuMaa4G3r6J_EGbowXxqiGdQChhCYLGimZYoQGaalluZQbgkpMdwEkpBKBvRjKGae7SnslTvMNXu2EyY88FsH9s6MAwah0DnTPL9GY15Z-si1jYhpvJf52So9SYjDd6ArK5LHeWuE1WwSqkfWTP2J5fMwaUnqXEU-HlEJPdMN1qLd3GD-xGsXrzZVVgJ8n68_hgp92HGCeOgzurHeN5GfCPLEGT6aOKTfBMCCfIl8Ujve5lJcJFeQ0sFr9C7gKAHRIGCAcPtK2c98fk_ahuQGa0CRh4FXebt6IONBsDOAryRGAXVLZxXEqgy1Vwab82YuGPR_dpsTycGC93KA1JHzTVguHEkmVs5ZglZF_gSJ6z1NkX4JMmNOvIUSPzY6o4gRU594pKwz28Ih4EQyhr0l6unfFj8eeVHGd0OqJ5aAmWrN1JrIrC9FAE_PhTnArUq0ZuQgL_zPNOnIXdNOcSv9Br8VmE-nHgvWAD_jvUMOOH=s75-no" title="Blogger" alt="Blogger icon" height="36" width="36">
+	</a>
+		<a href="http://www.last.fm/user/theanniemarie" target="_blank">
+		<img src="https://lh3.googleusercontent.com/g5AEpf_XhIExqTKGsS9YKwQQcrF6lpHC93eZRaYXOj3DVYOerfjFyD_HpKDmhbld_g5LJTcjaCqf907rH3efgvdVmLvm0Ws1cZi_K_6QYfIyaQNa02zqzhwhNnTAj3yIe7aH_kdR1Iq-H5bsj4qhTNASOAkJPosfSa9dzohKEKBshDMflmaKMnk4Jl9HyjCGU_M4JXnt444baQMNwmt9ppEGNXHxVP4geEjoa3wwNfdjDHZOYbtzXe-GkKCCyvzKIRl-oex5mthEX6YacZxHErljAI__P6PPV9Nt6IAZM63yE6-ValHz8PrWMmsMWZvgYmeeCmopT0wdbYzDAsDQ71yOq4b42SNOL3hWJ1pmv2vJwx6nm4ho-u5Ez7dYETSNz7DVR3W6JyGXCK4H2ILnm_jbhgbzgIv74xrFC3YxZtrIc-6rr1ZRrXTVwf32MkFUEi2fHuuVIhHdYT9MZXY0WSfeL7DX1Qk6toESpiEMQlQOxvMlYY2QVEF3Vee2CVDwg2t_rEyPbQ9j930zOKeXh6Ocufyzr4sQg6Wiwm2yDyT21w7e9pwHK0evbebSsGjWq1MH6LR0qIMsEUI3hyR-OAyAfM2lww-tZZEz2REweiiFaBbm=s75-no" title="Last.fm" alt="Last.fm icon" height="36" width="36">
+	</a>
+	<a href="mailto:annekopas@gmail.com" target="_blank">
+		<img src="https://lh3.googleusercontent.com/TdGRsNcKXs60dfAPxme85bvik3HaeXezj6R9iZFsWXAoTC0iIeRXXePpWM-wCtey6LF9Dv1vcguiYbw_xvhVaXHRQU494czU_DucDn7dyOfntMytdqSrV0JKNM-ceVSQlcgZOIYA8TLp2nVZUBVB1eCQYHHtjg7HXPqAa9ZiN1hYhPKnwDqidxN6C8k3yqHsAZIuHqwBfbqpN5B5XzteldHhUR_rWbg0Q_xRAm2th8o2906qeV8L7AMplFU2vt752aW8WVkXW92-sCjnwG8W8O35JEd2w1Qlqs0YOVkdXHAM7XNHlbmDOEDXOKylTp92205RPpJPop3cegYbj8ptuM2zKqWNXnFzZch5c0tKU53sTJGZPSHkGnWXaKO8huPGd4H6AF0WNOt4K5OKpOVB-3yL9yoMmFit6ufAMwlJtdfvX7sG_D8HV9r249F4yP-rapDD6xNT897Em20UdOrmISYe5VfgL3fKlhwgJQ_vjCYvZNrZ2v77dJrs7RUnJ9ueY97pZPkYspUHC0JfkifQekLsuyE_eQnYETdRwoK0d6o7x84EAZCLKwisSfctooUn80Jhndphx4-h2DrhNBeVJ9BrzELH-hjco7exrlZa5KzgOfSM=s75-no" title="Email" alt="email icon" height="36" width="36">
+	</a>
+</div>
+</div> <!--div class="a:hover"-->
+</footer>
+
+</div>  <!-- wrapper -->
+
+</body>
+
+</html>
