@@ -350,3 +350,12 @@ a .icon:hover {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+@media screen and (max-width: 1000px) {
+	.porfolio-item img {
+		display: flex;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
