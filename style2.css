@@ -1,0 +1,352 @@
+/* RESET DEFAULT BROWSER STYLES */
+/* These styles will clear all of the default styles 
+and give you a clean playing field for developing
+your own style */
+/***** DO NOT CHANGE THESE STYLES *****/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img { border: none; }
+
+/***  END OF RESET DEFAULT BROWSER STYLES ***/
+
+/** .CLEARING resets floating elements **/
+
+.clear { clear: both; }
+
+
+/** BEGIN WRITING YOUR CSS SPECIFICATIONS **/
+* {
+	box-sizing: border-box;
+	}
+
+body
+{
+	background-color: #fff;
+	font-family: 'Roboto', helvetica, sans-serif;
+	letter-spacing: 0px;
+	background-color: #4F022D;
+}
+
+a {
+	text-decoration: none;
+	color: #4F022D;
+	font-weight: bold;
+}
+
+#front-page {
+	margin-left: 35vw;
+	margin-top: 25vh;
+}
+
+#front-page h1 {
+	font-family: 'Poiret One', helvetica, sans-serif;
+	font-size: 4.5em;
+	color: white;
+	font-weight:400;
+}
+
+#front-page h2 {
+	font-family: 'Poiret One', helvetica, sans-serif;
+	font-size: 3em;
+	color: white;
+	font-weight:400;
+}
+
+#front-page p {
+	color:#fff;
+	font-size: 1em;
+	font-family:'Roboto', Helvetica, sans-serif;
+	margin-top: .5em;
+	max-height:90%;
+}
+#header-title {
+	width: 100%;
+	text-align: center;
+}
+#header-title h1 {
+	font-family: 'Poiret One', Helvetica, sans-serif;
+	display: inline;
+	color: #fff;
+	font-size: 5em;
+	margin: auto;
+	text-align: center;
+}
+#header-title h2 {
+	font-family: 'Poiret One', Helvetica, sans-serif;
+	font-size: 3em;
+	color: #fff;
+}
+
+.body-page {
+	margin: 2em;
+}
+.body-page h1 {
+	width: 100%;
+	z-index: 5;
+	font-size: 4em;
+	color: #fff;
+	font-family: 'Poiret One', Helvetica, sans-serif;
+}
+.body-page h2 {
+	width: 100%;
+	font-size: 3em;
+	margin-bottom: 0.5em;
+	color: #fff;
+	font-family: 'Poiret One', Helvetica, sans-serif;
+}
+.body-page h3 {
+	width: 100%;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	color: #fff;
+	font-family: 'Poiret One', Helvetica, sans-serif;
+}
+.body-page p {
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	font-family: 'Roboto', Helvetica, sans-serif;
+}
+.body-page ul li {
+	color: #fff;
+	font-size: 1em;
+	margin-left: 1em;
+	list-style-type: circle;
+}
+.icon {
+	color:#508CA4;
+	font-size: 2em;
+	margin: 0.25em;
+}
+
+a .icon:hover {
+	color:#666;
+}
+#all-icons {
+	display: flex;
+	flex-wrap: wrap;
+	height: 10%;
+	width: 100%;
+	position:fixed;
+	padding-left: 85%;
+	margin-bottom: .25em;
+	bottom: 0px;
+}
+#all-icons p {
+	color: #fff;
+	display: inline;
+}
+
+#portfolio-flex {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.portfolio-item {
+	width:48%;
+	margin-bottom: 1.5em;
+	margin-right:1em;
+	background-color: #fff;
+	padding: 1em;
+	box-shadow: 8px 8px 4px #508CA4;
+}
+.portfolio-item:hover {
+	box-shadow: 8px 8px 4px #666;
+}
+.portfolio-item img {
+	float:left;
+	width:300px;
+	height: 300px;
+	object-fit: cover;
+	overflow:hidden;
+	margin-right:0.5em;
+}
+.portfolio-item h3 {
+	text-align: left;
+	color: black;
+	font-size: 1.5em;
+	line-height:1.5em;
+	margin-bottom: .5em;
+}
+.portfolio-item h4 {
+	color: #4F022D;
+	margin: 0.25em 0 0.25em 0;
+	font-style: italic;
+}
+.portfolio-item p {
+	color: #666;
+}
+
+#screenshots-flex {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-direction: row;
+}
+.screenshot-img {
+/*	margin: 0.5em 12.5% 0.5em 12.5%;*/
+	width: 66%;
+	margin-right: 0.25em;
+	margin-bottom: 1.5em;
+}
+.screenshot-img img {
+	width: 100%;
+	box-shadow: 8px 8px 4px #508CA4;
+}
+.screenshot-img img:hover {
+	box-shadow: 8px 8px 4px #666;
+}
+.screenshot-text {
+	width: 33%;
+	margin-left: 0.5em;
+	padding-left: 0.25em;
+}
+.screenshot-text h3, .screenshot-text a {
+	color: #4F022D;
+}
+.screenshot-text p {
+	color: #666;
+}
+.screenshot-flex-item {
+	display: flex;
+	background-color: #fff;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+#facts-flex {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.big-flex {
+	display:flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+.facts-box {
+	display: inline-block;
+	width: 100%;
+	background-color: white;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	padding: 1em;
+	box-shadow: 8px 8px 4px #508CA4;
+}
+.facts-box:hover {
+	box-shadow: 8px 8px 4px #666;
+}
+.facts-box img {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 500px;
+}
+.facts-box h1 {
+	color: #4F022D;
+}
+.facts-box p {
+	color: #666;
+	font-size: 1em;
+}
+.facts-box ul li {
+	color: #666;
+	font-size: 1em;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
