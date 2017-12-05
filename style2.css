@@ -102,10 +102,17 @@ a {
 
 #front-page p {
 	color:#fff;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-family:'Roboto', Helvetica, sans-serif;
 	margin-top: .5em;
 	max-height:90%;
+}
+#front-page a {
+	color: #508CA4;
+	font-weight: bold;
+}
+#front-page a:hover {
+	color:#fff;
 }
 #header-title {
 	width: 100%;
