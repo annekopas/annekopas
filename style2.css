@@ -292,6 +292,8 @@ a .icon:hover {
 }
 .facts-box h1 {
 	color: #4F022D;
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
 }
 .facts-box p {
 	color: #666;
@@ -352,10 +354,26 @@ a .icon:hover {
 }
 
 @media screen and (max-width: 1000px) {
-	.porfolio-item img {
+	.portfolio-item img {
 		display: flex;
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
+		padding-right: .5em;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.portfolio-item {
+		width: 100%;
+		margin: 0 3em 1em 3em;
+	}
+	.portfolio-item img {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#all-icons {
+		padding-left: 60%;
 	}
 }

@@ -25,12 +25,14 @@ function closeNav() {
 function openNav() {
     document.getElementById("mySidenav").style.width = "20%";
     document.getElementById("main").style.marginLeft = "20%";
+    document.getElementById("nav-footer").style.position = "fixed";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "2em";
+    document.getElementById("nav-footer").style.display = "none";
 }
 </script>
 </head>
@@ -46,8 +48,7 @@ function closeNav() {
   <a href="portfolio.html">Portfolio</a>
   <a href="experience.html">Experience</a>
   <a href="freelance.html">Freelance</a>
-  <a href="contact.html">Contact</a>
-  <p style="width:100%;bottom:0px;color:#fff;margin-left:0.25em;">© 2017 Anne Kopas</p>
+  <p id="nav-footer" style="width:100%;bottom:0px;color:#fff;margin-left:0.25em;">© 2017 Anne Kopas</p>
 	</div>
 <!-- Use any element to open the sidenav -->
 <span onclick="openNav()" style="font-size:3em;color:#fff;position:fixed;">&#9776;</span>
