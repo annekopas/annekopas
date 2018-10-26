@@ -387,6 +387,6 @@ a .icon:hover {
 @media screen and (max-width: 500px) {
 	#front-page {
 		margin-top: 5vh;
-		margin-left: 5vw;
+		margin-left: 10vw;
 	}
 }
