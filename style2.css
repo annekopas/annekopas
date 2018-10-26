@@ -384,3 +384,8 @@ a .icon:hover {
 		padding-left: 60%;
 	}
 }
+@media screen and (max-width: 500px) {
+	#front-page {
+		margin-top: 10vh;
+	}
+}
