@@ -6,73 +6,177 @@
 	<meta name="keywords" content="anne kopas, st. thomas">
 	<meta name="description" content="Website of Anne Kopas">
 	<meta name="author" content="Anne Kopas">
-	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style3.css">
 	<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 	<title>Anne Kopas</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "20%";
-}
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0.5em 0.5em";
+    document.getElementById("navbar").style.height = "10%";
+    // document.getElementById("navbar").style.background = "rgb(102, 102, 102)";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("navbar").style.background = "white";
+  }
 }
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "20%";
-    document.getElementById("main").style.marginLeft = "20%";
-    document.getElementById("nav-footer").style.position = "fixed";
-}
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "2em";
-    document.getElementById("nav-footer").style.display = "none";
-}
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 </script>
 </head>
 
-	<header >
-
+	<header>
+<div id="navbar">
+  <a href="#default" id="logo">Anne M. Kopas</a>
+  <div id="navbar-right">
+    <a href="#about">About</a>
+    <a href="#articles">Articles</a>
+    <a href="#projects">Projects</a>
+  </div>
+</div>
 </header>
-<body >
-	<div id="mySidenav" class="sidenav" style="display:inline;">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="experience.html">Experience</a>
-  <a href="freelance.html">Freelance</a>
-  <p id="nav-footer" style="width:100%;bottom:0px;color:#fff;margin-left:0.25em;">© 2017 Anne Kopas</p>
-	</div>
-
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()" style="font-size:3em;color:white;">&#9776;</span>
-	<div id="main">
-		<div id="front-page">
-			<h1>Hi. I'm Anne Kopas.</h1>
-			<h2>I write things.</h2>
-			<h2>I edit things.</h2>
-			<h2>I make websites, too.</h2>
-			<br>
-			<p>Check out <a href="portfolio.html">my work</a>, <a href="about.html">learn more</a>, or <a href="mailto:annekopas@gmail.com">start a conversation</a>.</p>
-					</div><!--front-page-->
-			<div id="all-icons">
-				<a href="https://twitter.com/annekopas" target="_blank"><div class="socicon-twitter icon"></div></a>
-				<a href="https://www.linkedin.com/in/anne-kopas" target="_blank"><div class="socicon-linkedin icon"></div></a>
-				<a href="https://www.instagram.com/anniekopas/" target="_blank"><div class="socicon-instagram icon"></div></a>
-			</div><!--all-icons-->
-	</div><!--main-->
-
-
-
+<body>
+<!-- 		<div class="headercontainer">
+	<h1>Anne Kopas</h1>
+	<p>writer &bull; editor &bull; web designer</p>
+</div> -->
+<div class="parallax1" id="home">
+	<img src="kopas.jpg">
+	<h1>Writer. Editor. Web designer.</h1>
+</div> <!--parallax-->
+<div class="centerbody" style="max-width:90%;margin:auto;">
+		<img src="yellow.jpg" id="yellow" style="margin-bottom: 5em;">
+	<div class="innertext" style="margin-left: 5em;">
+	<h1 id="about">
+		Hey. I'm Anne.
+	</h1>
+	<p> I'm a storyteller at heart with a passion for the written word, both print and digital. I've been a blogger, magazine writer, literary journal editor, web designer, and more. I'm currently a full-time journalist with several southeastern Minnesota newspapers and related publications, moonlighting as a YA novelist (seeking representation). I'm a University of St. Thomas grad with degrees in Communications/Journalism and English, with a minor in pyschology. When not scouting local feature stories, you'll find me going for a run around town, baking up a storm, or reading the largest novels I can find.
+	</p>
+	<p style="margin-bottom: 0.5em">My work has appeared in:
+		<li>Minnesota Monthly</li>
+		<li>TommieMedia</li>
+		<li>Southern Minn SCENE</li>
+		<li>Minnesota Business Magazine</li>
+		<li>Summit Avenue Review</li>
+		<li>Northfield News, Faribault Daily News, Kenyon Leader, and more...</li>
+	<h2>
+		Have a story, but aren't sure how to tell it? <a href="mailto:annekopas@gmail.com">Let's talk.</a> 
+	</h2>
+</div><!--innertext-->
+</div><!--centerbody-->
+<div class="parallax2" style="max-height: 40%">
+</div><!--parallax2-->
+<div class="centerbody" style="height:fit-content;max-width:90%;margin:auto;">
+	<h1 id="articles">Articles</h1>
+	<div class="portfolio">
+		<div class="portfolio-item">
+			<h1>Homeless youth share difficult, sometimes heartbreaking stories</a></h1>
+			<img src="mace.jpg">
+			<p>There's no one way to be homeless. For one Northfield youth, it meant sleeping in a park. For another, it meant couch surfing, constantly looking for a place to land... <a href="http://www.southernminn.com/northfield_news/news/article_10b8332f-3b8a-5dcb-9e10-79b843184821.html">Read more (requires subscription)</a></p>
+		</div><!--portfolio-item-->
+		<div class="portfolio-item">
+			<h1>“Sioux Chef” Challenges Definition of Local Food with Indigenous Restaurants</a></h1>
+			<img src="corn.jpg">
+			<p>Chef Sean Sherman is revitalizing indigenous food traditions with two upcoming restaurants, a cookbook, and a nonprofit—using only food native to Minnesota... <a href="https://www.minnesotamonthly.com/food-drink/sioux-chef-challenges-definition-of-local-food-with-indigenous-restaurants/l">Read more from Minnesota Monthly</a></p>
+		</div><!--portfolio-item-->
+		<div class="portfolio-item">
+			<h1>Klobuchar staff meets with Northfielders to discuss rising cost of prescription drugs</a></h1>
+			<img src="klobuchar.jpg">
+			<p>As prescription drug costs rise, both legislators and small-town Minnesota communities are asking how it happened, and more importantly, what’s to be done about it.... <a href="https://www.klobuchar.senate.gov/public/index.cfm/mobile/amy-in-the-news?ID=487D8239-911E-459D-B7BF-619704287597">Read more from Amy Klobuchar's website</a></p>
+		</div><!--portfolio-item-->
+		<div class="portfolio-item">
+			<h1>Calhoun, Mud Lake, and Pig’s Eye: A Brief History of Renaming Minnesota Places</a></h1>
+			<img src="calhoun.jpg">
+			<p>Lake Calhoun is only the latest in the history of Minnesota place renamings, which includes N-word lakes, Pig’s Eye, and a middle school almost named after Prince... <a href="https://www.minnesotamonthly.com/travel-recreation/calhoun-mud-lake-and-pigs-eye-a-brief-history-of-renaming-minnesota-places/">Read more from Minnesota Monthly</a></p>
+		</div><!--portfolio-item-->
+		<div class="portfolio-item">
+			<h1>Profile: 2019 Citizen of the Year finds Faribault's future in its history</a></h1>
+			<img src="profile.jpg">
+			<p> Faribault's history is omnipresent throughout the town. Few Faribaultians know this better than this 18-year-old... <a href="http://www.southernminn.com/faribault_daily_news/news/article_b5a9e9cf-5e99-5771-a04e-078e11218bce.html">Read more from the Faribault Daily News</a></p>
+		</div><!--portfolio-item-->
+		<div class="portfolio-item">
+			<h1>Arts and entertainment year in review: Creative placemaking, inclusion, connection</a></h1>
+			<img src="southern-minn-scene-logo.png" style="object-fit:contain;">
+			<p>If you search “top trends of 2018,” the new ideas and cultural shifts of Southern Minnesota arts organizations probably won’t top the list, but local artists were growing their regional presence all the same... <a href="http://www.southernminnscene.com/2018-arts-and-entertainment-year-in-review-creative-placemaking-inclusion-connection/">Read more from Southern Minn SCENE</a></p>
+		</div><!--portfolio-item-->
+	</div><!--portfolio-->
+	</div><!--centerbody-->
+	<div class="parallax2" style="background-image:url(watercolorgreen.jpg);">
+	</div><!--parallax2-->
+	<div class="centerbody" style="height:fit-content;max-width:90%;margin:auto;">
+		<h1 id="projects">Other Projects</h1>
+				<div class="portfolio">
+			<div class="portfolio-item">
+				<h1>TommieMedia</h1>
+				<img src="tommiemedia.png">
+				<p>The University of St. Thomas' student news outlet, TommieMedia, uses my custom-built WordPress theme.</p>
+			</div><!--portfolio-item-->
+			<div class="portfolio-item">
+				<h1>Summit Avenue Review</h1>
+				<img src="sarsample.jpg">
+				<p>I designed the 2018 edition of the Summit Avenue Review, a student literary magazine.</p>
+			</div><!--portfolio-item-->
+			<div class="portfolio-item">
+				<h1>Journeys</h1>
+				<img src="journeys.jpg">
+				<p>I worked with a team to edit, design, and market Journeys, the Minnesota Literacy Council's annual anthology.</p>
+			</div><!--portfolio-item-->
+			<div class="portfolio-item">
+				<h1>Fiction</h1>
+				<img src="dandelions.jpg">
+				<p>I'm currently seeking a literary agent to represent my mythology-inspired young adult novel.</p>
+			</div><!--portfolio-item-->
+			<div class="portfolio-item">
+				<h1>Creative Work</h1>
+				<img src="journeys.jpg">
+				<p>My poetry and fiction have appeared in the Summit Avenue Review, the Delta Epsilon Sigma honor society journal, Teen Ink magazine, and the sidewalks of Northfield, Minnesota.</p>
+			</div><!--portfolio-item-->
+		</div>
+	</div><!--centerbody-->
+	<div class="parallax2">
+	</div><!--parallax2-->
 <footer>
-
+	<div id="footerbody">
+		<p style="padding-right: 2em;">&copy; Anne Kopas 2019</p>
+		<p><a href="mailto:annekopas@gmail.com">annekopas@gmail.com</a></p>
+		<div id="socialicons">
+			<a href="https://twitter.com/annekopas" target="_blank"><div class="socicon-twitter icon"></div></a>
+			<a href="https://www.linkedin.com/in/anne-kopas" target="_blank"><div class="socicon-linkedin icon"></div></a>
+			<a href="https://www.instagram.com/anniekopas/" target="_blank"><div class="socicon-instagram icon"></div></a>
+		</div><!--socialicons-->
+	</div><!--footerbody-->
 </footer>
 
 </body>
