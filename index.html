@@ -10,22 +10,33 @@
 	<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400,500,600,700&display=swap" rel="stylesheet">
 	<title>Anne Kopas</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 	<script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "0.5em 0.5em";
-    document.getElementById("navbar").style.height = "10%";
+    document.getElementByClass("topnav").style.padding = "0.5em 0.5em";
+    document.getElementByClass("topnav").style.height = "10%";
     // document.getElementById("navbar").style.background = "rgb(102, 102, 102)";
-    document.getElementById("logo").style.fontSize = "25px";
-  } else {
-    document.getElementById("navbar").style.padding = "50px 10px";
     document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar").style.background = "white";
+  } else {
+    document.getElementByClass("topnav").style.padding = "0.5em 0.5em";
+    document.getElementById("logo").style.fontSize = "35px";
+    document.getElementByClass("topnav").style.background = "white";
   }
 }
 </script>
@@ -55,135 +66,172 @@ $(document).ready(function(){
   });
 });
 </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154573151-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-154573151-1');
-</script>
 </head>
 
-	<header>
-<div id="navbar">
-  <a href="#default" id="logo">Anne M. Kopas</a>
-  <div id="navbar-right">
-    <a href="#about">About</a>
-    <a href="#articles">Articles</a>
-    <a href="#projects">Projects</a>
+<header>
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">anne m. kopas</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html#aboutslide">about</a>
+    <a href="index.html#articles">writing</a>
+    <a href="#freelance">freelance</a>
   </div>
+     <a href="index.html#aboutslide" class="activelinks">about</a>
+    <a href="index.html#articles" class="activelinks">articles</a>
+     <a href="#freelance" class="activelinks">freelance</a>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+<!-- <div id="navbar">
+  <a href="index.html#home" id="logo" id="default">Anne M. Kopas</a>
+  <div id="navbar-right">
+    <a href="#aboutslide">about</a>
+    <a href="#articles">articles</a>
+    <a href="#freelance">freelance</a>
+  </div>
+</div> -->
 </header>
 <body>
 <!-- 		<div class="headercontainer">
 	<h1>Anne Kopas</h1>
 	<p>writer &bull; editor &bull; web designer</p>
 </div> -->
-<div class="parallax1" id="home">
+<div id="home">
+<div class="boxtext">
+	<div class="homeimage">
 	<img src="kopas.jpg">
-	<h1>Writer. Editor. Web designer.</h1>
-</div> <!--parallax-->
-<div class="centerbody" style="max-width:90%;margin:auto;">
-		<img src="yellow.jpg" id="yellow" style="margin-bottom: 5em;">
-	<div class="innertext" style="margin-left: 5em;">
-	<h1 id="about">
-		Hey. I'm Anne.
-	</h1>
-	<p> I'm a storyteller at heart with a passion for the written word, both print and digital. I've been a blogger, magazine writer, literary journal editor, web designer, and more. I'm currently a full-time journalist with several southeastern Minnesota newspapers and related publications, moonlighting as a YA novelist (seeking representation). I'm a University of St. Thomas grad with degrees in Communications/Journalism and English, with a minor in pyschology. When not scouting local feature stories, you'll find me going for a run around town, baking up a storm, or reading the largest novels I can find.
-	</p>
-	<p style="margin-bottom: 0.5em">My work has appeared in:
+	</div>
+<div class="introtext">
+	<h1>Hey. I'm Anne.</h1>
+	<h2>Stories matter to me.</h2>
+	<h3>I'm a writer with experience in journalism, marketing, and web design. It's nice to meet you.</h3>
+</div>
+</div><!--div class boxtext-->
+<div class="downarrow">
+	<a href="#aboutslide">&#xe003</a>
+</div>
+</div><!--div id home-->
+<div id="slide2" id="freelanceslide">
+<!-- 		<img src="yellow.jpg" id="yellow" style="margin-bottom: 5em;"> -->
+	<div class="innertext" id="aboutslide">
+		<div class="abouttext">
+		<h2>storyteller.<br class="br"> editor.<br class="br"> web designer.<br class="br"> content strategist.<br class="br"> author.<br class="br"> journalist.</h2>
+	</div><!--abouttext-->
+	<div class="abouttext">
+			<p>No matter how you say it, it boils down to this: words fuel me. I'm a University of St. Thomas grad with degrees in English and communications / journalism and a minor in pyschology. When not working my university marketing job or scouting local feature stories, you'll find me going for a run around town, baking up a storm, or reading the largest novels I can find. I'm also seeking representation for a YA sci-fi novel.</p>
+	</div><!--abouttext-->
+	<div class="abouttext aboutpic">
+		<img src="bluffs.jpg">
+	</div><!--abouttext-->
+	<div class="abouttext mywork">	
+		<h2>You may have seen my work in...</h2>
+		<p>Minnesota Monthly &#x7c; Hamline Alumni Magazine &#x7c; TommieMedia &#x7c; Minnesota Business Magazine &#x7c; Southern Minn SCENE &#x7c; Northfield News &#x7c; Faribault Daily News &#x7c; Kenyon Leader &#x7c; Summit Avenue Review &#x7c; Fleur-de-lis &#x7c; Northfield NOW</p>
+<!-- 	<p style="margin-bottom: 0.5em; margin-left: auto;margin-right: auto;">My work has appeared in:
 		<li>Minnesota Monthly</li>
 		<li>TommieMedia</li>
 		<li>Southern Minn SCENE</li>
 		<li>Minnesota Business Magazine</li>
 		<li>Summit Avenue Review</li>
-		<li>Northfield News, Faribault Daily News, Kenyon Leader, and more...</li>
-	<h2>
-		Have a story, but aren't sure how to tell it? <a href="mailto:annekopas@gmail.com">Let's talk.</a> 
+		<li>Hamline Alumni Magazine</li>
+		<li>Northfield News, Faribault Daily News, Kenyon Leader, and more...</li> -->
+</div><!--about text -->
+<div class="abouttextfull full2">
+	<h2 id="storycta">
+		Have a story? <a href="mailto:annekopas@gmail.com">Let's talk.</a> 
 	</h2>
+</div>
 </div><!--innertext-->
-</div><!--centerbody-->
-<div class="parallax2" style="max-height: 40%">
-</div><!--parallax2-->
-<div class="centerbody" style="height:fit-content;max-width:90%;margin:auto;">
-	<h1 id="articles">Articles</h1>
+</div><!--div id slide2-->
+<div id="slide3">
+	<div class="abouttextfull">
+	<h1 id="articles">read my work</h1>
+	</div><!--abbouttextfull-->
 	<div class="portfolio">
-		<div class="portfolio-item">
-			<h1>Homeless youth share difficult, sometimes heartbreaking stories</a></h1>
-			<img src="mace.jpg">
-			<p>There's no one way to be homeless. For one Northfield youth, it meant sleeping in a park. For another, it meant couch surfing, constantly looking for a place to land... <a href="http://www.southernminn.com/northfield_news/news/article_10b8332f-3b8a-5dcb-9e10-79b843184821.html">Read more (requires subscription)</a></p>
+		<a class="portfolio-link" href="https://www.southernminn.com/faribault_daily_news/news/article_edf932f3-8154-5f06-be67-349c9dfa236d.html">
+		<div class="portfolio-item2" style="background-image: url(cambodia.jpg);">
+			<div class="portfoliotitle">
+			<h1>From Cambodia to Faribault: Separated by war, siblings reunite after 43 years</h1>
+			<p>Fleur-de-lis Magazine</p>
+		</div>
+	</a>
 		</div><!--portfolio-item-->
-		<div class="portfolio-item">
-			<h1>“Sioux Chef” Challenges Definition of Local Food with Indigenous Restaurants</a></h1>
-			<img src="corn.jpg">
-			<p>Chef Sean Sherman is revitalizing indigenous food traditions with two upcoming restaurants, a cookbook, and a nonprofit—using only food native to Minnesota... <a href="https://www.minnesotamonthly.com/food-drink/sioux-chef-challenges-definition-of-local-food-with-indigenous-restaurants/l">Read more from Minnesota Monthly</a></p>
+		<a class="portfolio-link" href="http://www.southernminn.com/northfield_news/news/article_10b8332f-3b8a-5dcb-9e10-79b843184821.html">
+		<div class="portfolio-item2" style="background-image: url(mace.jpg);">
+			<div class="portfoliotitle">
+			<h1>Homeless youth share difficult, sometimes heartbreaking stories</h1>
+			<p>Northfield News</p>
+		</div>
+		</a>
 		</div><!--portfolio-item-->
-		<div class="portfolio-item">
-			<h1>Klobuchar staff meets with Northfielders to discuss rising cost of prescription drugs</a></h1>
-			<img src="klobuchar.jpg">
-			<p>As prescription drug costs rise, both legislators and small-town Minnesota communities are asking how it happened, and more importantly, what’s to be done about it.... <a href="https://www.klobuchar.senate.gov/public/index.cfm/mobile/amy-in-the-news?ID=487D8239-911E-459D-B7BF-619704287597">Read more from Amy Klobuchar's website</a></p>
+		<a class="portfolio-link" href="https://www.southernminn.com/faribault_daily_news/news/article_366d562e-7ab0-542f-b03c-f8385123a8fe.html">
+ 		<div class="portfolio-item2" style="background-image: url(nerstrand.jpg);">
+			<div class="portfoliotitle">
+			<h1>'It's like time stood still': Couple fights to preserve ancestors' 164-year-old cabin</h1>
+			<p>Faribault Daily News</p>
+			</div>
+		</a>
 		</div><!--portfolio-item-->
-		<div class="portfolio-item">
-			<h1>Calhoun, Mud Lake, and Pig’s Eye: A Brief History of Renaming Minnesota Places</a></h1>
-			<img src="calhoun.jpg">
-			<p>Lake Calhoun is only the latest in the history of Minnesota place renamings, which includes N-word lakes, Pig’s Eye, and a middle school almost named after Prince... <a href="https://www.minnesotamonthly.com/travel-recreation/calhoun-mud-lake-and-pigs-eye-a-brief-history-of-renaming-minnesota-places/">Read more from Minnesota Monthly</a></p>
+		<a class="portfolio-link" href="https://www.minnesotamonthly.com/travel-recreation/calhoun-mud-lake-and-pigs-eye-a-brief-history-of-renaming-minnesota-places/">
+		<div class="portfolio-item2" style="background-image: url(calhoun.jpg);">
+			<div class="portfoliotitle">
+			<h1>Calhoun, Mud Lake, and Pig’s Eye: A Brief History of Renaming Minnesota Places</h1>
+			<p>Minnesota Monthly</p>
+		</div>
+	</a>
 		</div><!--portfolio-item-->
-		<div class="portfolio-item">
-			<h1>Profile: 2019 Citizen of the Year finds Faribault's future in its history</a></h1>
-			<img src="profile.jpg">
-			<p> Faribault's history is omnipresent throughout the town. Few Faribaultians know this better than this 18-year-old... <a href="http://www.southernminn.com/faribault_daily_news/news/article_b5a9e9cf-5e99-5771-a04e-078e11218bce.html">Read more from the Faribault Daily News</a></p>
+		<a class="portfolio-link" href="http://www.southernminn.com/faribault_daily_news/news/article_b5a9e9cf-5e99-5771-a04e-078e11218bce.html">
+		<div class="portfolio-item2" style="background-image: url(profile.jpg);">
+			<div class="portfoliotitle">
+			<h1>Profile: 2019 Citizen of the Year finds Faribault's future in its history</h1>
+			<p>Faribault Daily News</p>
+		</div>
+		</a>
 		</div><!--portfolio-item-->
-		<div class="portfolio-item">
-			<h1>Arts and entertainment year in review: Creative placemaking, inclusion, connection</a></h1>
-			<img src="southern-minn-scene-logo.png" style="object-fit:contain;">
-			<p>If you search “top trends of 2018,” the new ideas and cultural shifts of Southern Minnesota arts organizations probably won’t top the list, but local artists were growing their regional presence all the same... <a href="http://www.southernminnscene.com/2018-arts-and-entertainment-year-in-review-creative-placemaking-inclusion-connection/">Read more from Southern Minn SCENE</a></p>
+		<a class="portfolio-link" href="http://www.southernminnscene.com/2019-year-in-review-southern-minnesota-art-ushers-in-the-new-decade-with-a-growth-spurt/">
+		<div class="portfolio-item2" style="background-image: url(mankato-mural.jpg);">
+			<div class="portfoliotitle">
+			<h1>Southern Minnesota Art Ushers in the New Decade with a Growth Spurt</h1>
+			<p>Southern Minn SCENE</p>
+				<div>
+				</a>
 		</div><!--portfolio-item-->
 	</div><!--portfolio-->
-	</div><!--centerbody-->
-	<div class="parallax2" style="background-image:url(watercolorgreen.jpg);">
-	</div><!--parallax2-->
-	<div class="centerbody" style="height:fit-content;max-width:90%;margin:auto;">
-		<h1 id="projects">Other Projects</h1>
-				<div class="portfolio">
-			<div class="portfolio-item">
-				<h1>TommieMedia</h1>
-				<img src="tommiemedia.png">
-				<p>The University of St. Thomas' student news outlet, TommieMedia, uses my custom-built WordPress theme.</p>
-			</div><!--portfolio-item-->
-			<div class="portfolio-item">
-				<h1>Summit Avenue Review</h1>
-				<img src="sarsample.jpg">
-				<p>I designed the 2018 edition of the Summit Avenue Review, a student literary magazine.</p>
-			</div><!--portfolio-item-->
-			<div class="portfolio-item">
-				<h1>Journeys</h1>
-				<img src="journeys.jpg">
-				<p>I worked with a team to edit, design, and market Journeys, the Minnesota Literacy Council's annual anthology.</p>
-			</div><!--portfolio-item-->
-			<div class="portfolio-item">
-				<h1>Fiction</h1>
-				<img src="dandelions.jpg">
-				<p>I'm currently seeking a literary agent to represent my mythology-inspired young adult novel.</p>
-			</div><!--portfolio-item-->
-			<div class="portfolio-item">
-				<h1>Creative Work</h1>
-				<img src="journeys.jpg">
-				<p>My poetry and fiction have appeared in the Summit Avenue Review, the Delta Epsilon Sigma honor society journal, Teen Ink magazine, and the sidewalks of Northfield, Minnesota.</p>
-			</div><!--portfolio-item-->
-		</div>
-	</div><!--centerbody-->
-	<div class="parallax2">
-	</div><!--parallax2-->
+</div>
+	<div id="readmore">
+		<a href="articles.html"><h2>read more</h2></a>
+	</div>
+</div><!--div id slide3-->
+</div><!--slide3-->
+<div id="slide4">
+	<div class="homeimage" id="yellow">
+	<img src="lakelouise.jpg" id="freelance">
+</div><!--homeimage -->
+	<div class="innertext" style="padding-top:0px;">
+		<div class="abouttext">
+		<h2>Snappy copy.<br>Smooth prose.<br>Stories told right.</h2>
+	</div><!--abouttext-->
+	<div class="abouttext">
+		<h1>freelance</h1>
+			<p>That's my thing. Whether you just need another pair of eyes on your content, a compelling feature article, or the website framework to hold it all, I'm ready to roll up my sleeves and get to work on your words.</p>
+			<a href="freelance.html"><h2>Let's get started.</h2></a>
+	</div><!--abouttext-->
+	</div><!--innertext-->
+</div><!--slide4-->
 <footer>
 	<div id="footerbody">
-		<p style="padding-right: 2em;">&copy; Anne Kopas 2019</p>
-		<p><a href="mailto:annekopas@gmail.com">annekopas@gmail.com</a></p>
+		<p style="padding-right: 2em;">&copy; Anne Kopas 2020</p>
 		<div id="socialicons">
-			<a href="https://twitter.com/annekopas" target="_blank"><div class="socicon-twitter icon"></div></a>
-			<a href="https://www.linkedin.com/in/anne-kopas" target="_blank"><div class="socicon-linkedin icon"></div></a>
-			<a href="https://www.instagram.com/anniekopas/" target="_blank"><div class="socicon-instagram icon"></div></a>
+			<a href="mailto:annekopas@gmail.com">&#xe047</a>
+			<a href="https://twitter.com/annekopas" target="_blank">&#xe0a7</a>
+			<a href="https://www.linkedin.com/in/anne-kopas" target="_blank">&#xe0b9<div class="socicon-linkedin icon"></div></a>
+			<a href="https://www.instagram.com/anniekopas/" target="_blank">&#xe0b8<div class="socicon-instagram icon"></div></a>
 		</div><!--socialicons-->
 	</div><!--footerbody-->
 </footer>

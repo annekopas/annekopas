@@ -74,8 +74,9 @@ html {
 body
 {
 	background-color: white;
-	font-family: 'Roboto', verdana, helvetica, sans-serif;
-	letter-spacing: 0px;
+	font-family: 'Noto Serif JP', verdana, helvetica, sans-serif;
+/*	letter-spacing: 1px;*/
+	font-weight:300;
 	height: 100%;
 }
 
@@ -83,26 +84,27 @@ h1 {
 	color:white;
 	font-family: 'Poiret One', sans-serif;
 	font-size: 5em;
-	border: 3px white solid;
-	border-radius: 12px;
-	width: 50%;
 	display: inline-block;
 }
 h2 {
 	font-family: 'Poiret One', sans-serif;
 	margin-top: .5em;
 }
+h3 {
+	font-family: 'Poiret One', sans-serif;
+	margin-bottom: .5em;
+	font-size: 1.5em;
+}
 p {
-	line-height: 1.3em;
+/*	line-height: 1.3em;*/
 	font-size: 1em;
 	word-wrap: break-word;
 	margin-bottom: 1.5em;
 }
-
 a {
 	text-decoration: none;
-	color: pink;
-	 transition: 0.4s;
+	color: #1D3F68;
+	transition: 0.4s;
 }
 a:hover {
 	color: #666;
@@ -111,6 +113,10 @@ a:hover {
 li {
 	margin-left: 2em;
 }
+@font-face {
+  font-family: iconmonstr-iconic-font;
+  src: url(iconmonstr-iconic-font.ttf);
+}
 #wrapper
 {
 	width: 100%;
@@ -118,10 +124,10 @@ li {
 }
 #navbar {
   overflow: hidden;
-  background-color: #white;
-  padding: 90px 10px;
+  background-color: #D3ABC1;
+  padding: .5em 10px;
   transition: 0.4s;
-  position: fixed;
+  position: fixed; /*makes navbar sticky to top*/
   width: 100%;
   top: 0;
   z-index: 99;
@@ -142,7 +148,7 @@ li {
   font-size: 4.5em;
   font-family: 'Poiret One';
   text-transform: lowercase;
-  color: rgb(255, 192, 255);
+  color: #1D3F68;
   font-weight: bold;
   transition: 0.4s;
 }
@@ -152,19 +158,167 @@ li {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: #1D3F68;
   color: black;
 }
 
 #navbar a.active {
-  background-color: pink;
+  background-color: #1D3F68;
   color: white;
 }
 
 #navbar-right {
   float: right;
 }
+/*Mobile nav styles*/
+#navbar {
+	display: hidden;
+}
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #1D3F68;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+/*Style the name logo*/
+a.active {
+	font-size: 3em;
+	font-family: 'Poiret One';
+	color: #1D3F68;
+	width: 75%;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: none; /*hides hamburger on big screen*/
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: #666;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: white;
+  color: white;
+}
+a.activelinks {
+	display: block;
+	color: black;
+	width: fit-content;
+	margin-top: 0.5em;
+}
+#home {
+	background: linear-gradient(180deg, #D3ABC1 50%, white 0%);
+	height:100%;
+}
+.backgroundbox {
+	height: 40%;
+    background: white;
+    margin-left: 45%;
+    padding-top: 35em;
+    width: 40em;
+    position: absolute;
+   }
+.box3 {
+	height: 18em;
+    background: #D3ABC1;
+    margin-left: 19%;
+    padding-top: 5em;
+    margin-top:16em;
+    width: 65%;
+    position: absolute;
+   }
+.boxtext {
+	display:flex;
+	padding-top:5em;
+	margin-bottom:2em;
+}
+.introtext {
+/*	z-index: 5;*/
+/*margin-left: 50%;*/
+	padding-top: 4em;
+    color:black;
+    position: relative;
+    flex-wrap: wrap;
+}
+.introtext h1 {
+    font-size: 4em;
+    color:black;
+}
+.introtext h2 {
+	font-size: 2em;
+}
+.introtext h3 {
+	width: 70%;
+	padding-top: 2em;
+}
+.homeimage {
+	max-width:30em;
+	display: block;
+	margin-left:20%;
+	padding-right:2em;
+	position:relative;
+}
+.homeimage img {
+	width: 100%;
+}
+#yellow.homeimage {
+	margin-left: auto;
+	margin-right:auto;
+}
+#yellow.homeimage img {
+	border:0px solid;
+}
+#slide2 {
+	height:fit-content;
+	margin: 4em;
+	background: linear-gradient(90deg, #D3ABC1 50%, white 0%);
+}
+#slide2.freelanceslide {
+	height: fit-content !important;
+	background: linear-gradient(90deg, #1D3F68 100%, white 0%);
+	text-align:center;
+	margin: 0px !important;
+}
+#slide3 {
+	height:fit-content;
+	width:100%;
+	margin-bottom: 2em;
+	background-color: #1D3F68;
+}
+#slide4 {
+	height:fit-content;
+	margin-bottom: 2em;
+	background: linear-gradient(90deg, #D3ABC1 50%, white 50%);
+}
+.downarrow {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.downarrow a {
+	font-family:'iconmonstr-iconic-font';
+	font-size: 5em;
+	margin-left: 45%;
+	margin-right:45%;
+}
 .parallax1 { 
   /* The image used */
   background-image: url("watercolorblue.jpg");
@@ -230,12 +384,18 @@ li {
 	position: relative;
 	display: block;
 }
-
+.freelanceslide h1 {
+	text-align: center;
+	padding-top: 25px;
+}
 .innertext {
-	width: 45%;
+	margin-left: 12em;
+	margin-right: 12em;
 	margin-bottom: 5em;
+	padding-top: 3em;
 	position: relative;
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .innertext h1 {
@@ -243,13 +403,84 @@ li {
 	font-weight: bold;
 	color: black;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 0.5em;
 }
 
 .innertext h2 {
-	font-size: 1.5em;
+	font-size: 2em;
 }
+.abouttext {
+	width:50%;
+	padding-left: 2em;
+	margin-top: 2em;
+}
+.mywork {
+	background:linear-gradient(180deg, #84828F 50%, white 50%);
+}
+.abouttextfull {
+	text-align:center;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.abouttextfull h2 {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2.3em;
+}
+.abouttextfull h1 {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px solid;
+}
+.abouttext.proof {
+	margin-left: auto;
+	margin-right: auto !important;
+	background-color: white;
+	padding: 2em 4em;
+	text-align: initial;
+}
+.abouttext.proof h2 {
+	font-size: 3em;
+/*	margin-top: 155px;*/
+	margin-bottom: 0.5em;
+}
+.abouttext.proof h3 {
+	margin-top: 1em;
+}
+.abouttext.bottom {
+	display: flex;
+	width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.freelancecta {
+	font-size: 3em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.freelancecta a {
+	color:white;
+}
+.freelancecta a:hover {
+	color:#666;
+}
+.abouttext ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: circle;
+	max-width: 100%;
+}
+.abouttext ul li {
 
+}
+.full2 {
+	width:100% !important;
+}
 .centerbody img {
 	width: 45%;
 	border-radius: 50%;
@@ -279,18 +510,68 @@ li {
 	color: white;
 	font-size: 2em;
 }
+.portfolio-item2 {
+    flex-wrap: wrap;
+    width: 29%;
+    background-position: cover;
+    position: relative;
+    margin-right: 1em;
+    margin-left: 2em;
+    margin-top: 1em;
+    background-size: cover;
+    height: 15em;
+    filter: grayscale(100%);
+}
 
+.portfolio-item2:hover {
+	filter: grayscale(0%);
+	transition: 0.4s;
+}
+
+.portfolio-link {
+/*	height: cover; */
+}
+
+.portfolio-item2 h1{
+	font-size: 1.35em;
+	font-weight: bold;
+	color: white;
+	width: 100%;
+	font-family: 'Roboto';
+	font-weight: 400;
+/*	position: absolute;*/
+	bottom: 0;
+	border: 0px;
+}
+.portfoliotitle {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(125, 125, 125, 0.75);
+	padding: 0.2em;
+	width: 100%;
+}
+.portfoliotitle p {
+	color: pink;
+	filter: grayscale(0%) !important;
+	margin-bottom: 0.15em;
+}
+.h1portfolio {
+	width:100%;
+	color: #D3ABC1;
+	text-align:center;
+}
 .portfolio {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
-	height: 100%;
+	height: fit-content;
 }
 
 .portfolio-item {
-	flex-wrap: wrap;
-	width: 33%;
-	padding: 0em 1em;
+    flex-wrap: wrap;
+    width: 32%;
+    margin: 0em 0.2em;
+    background-color: rgba(1,1,1,0.1)
 }
 
 .portfolio-item h1{
@@ -298,8 +579,10 @@ li {
 	font-weight: bold;
 	color: black;
 	width: 100%;
+	border-radius: 11px;
+	border: 0px !important;
 	font-family: 'Roboto';
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .portfolio-item p {
@@ -315,7 +598,37 @@ li {
 	display: block;
 	filter: grayscale(100%);
 }
+.project-portfolio {
+	flex-wrap: wrap;
+    width: 32.5%;
+}
+.project-portfolio p {
+	padding-left: 2em;
+	padding-top: 0.5em;
+}
 
+.readmore {
+	background-color: rgb(255, 192, 255, 0.95);
+	border-radius: 12px;
+	margin: auto;
+	width: 50%;
+}
+.readmore a {
+	color: white;
+	font-weight: 400;
+	margin-left: 20%;
+}
+#readmore {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 4em;
+}
+#readmore a {
+	color:white;
+}
+#readmore a:hover {
+	color:#666;
+}
 #footerbody {
 	max-height: 15%;
 	padding: 2em;
@@ -325,7 +638,7 @@ li {
 }
 
 #footerbody a {
-	color: pink;
+	color: #1D3F68;
 	transition: color 0.75s;
 }
 
@@ -334,6 +647,7 @@ li {
 }
 #socialicons {
 	display: flex;
+	font-family: 'iconmonstr-iconic-font';
 	justify-content: flex-end;
 /*	margin-left: 55%;*/
 }
@@ -344,7 +658,60 @@ li {
 }
 
 /*-------------MEDIA QUERIES-----------*/
+@media screen and (max-width: 1127px) {
+	 .portfolio-item2 {
+	 	width: 45%;
+	 }
+	.abouttext.mywork {
+		width:100%;
+		background:none;
+ }
+}
+@media screen and (max-width: 977px) {
+	 .portfolio-item2 { 
+  		width: 100% !important;
+  		font-size: 0.5em;
+  	 	margin: 0.5em 10em !important;
+  	 	height: 25em;
+ 	 }
+ 	 .project-portfolio {
+  	 	font-size: 0.5em;
+  	 	margin: 0em 8em !important;
+  	 	height: 25em;
+  	 	width: 85%;
+ 	 	}
+ 	 	.portfolio-item2 h1 {
+		font-size: 2.5em;
+	}
+	.portfoliotitle p {
+		font-size: 1.75em;
+ 	 }
+ 	 .introtext h3 {
+ 	 	margin-right: 0;
+ 	 }
+	}
 @media screen and (max-width: 860px) {
+	body {
+		overflow-x: hidden; /*stops horiztonal scrolling*/
+	}
+	#slide2 {
+		width: 100%;
+		margin-left: 0;
+		background: linear-gradient(90deg, #D3ABC1 100%, white 0%);
+		padding: 1em;
+	}
+	#slide3 {
+		width: 100%;
+/*		padding: 1em;*/
+	}
+	#slide4 {
+		width: 100%;
+		padding: 1em;
+		background: linear-gradient(90deg, white 0%, white 100%)
+	}
+	.br {
+		display: none;
+	}
 	.centerbody {
 		padding: 2em 2em;
 		height: fit-content;
@@ -360,11 +727,80 @@ li {
 		width:10em;
 		margin-bottom: 15em !important;
 	}
+	.backgroundbox {
+		width:100%;
+		display: none;
+	}
+  .boxtext {
+  	display: flex;
+  	flex-wrap: wrap;
+  	padding-top: 1.6em;
+  	text-align:center;
+
+  }
+  .homeimage {
+  	width: 100%;
+  }
+  .homeimage img {
+  	margin-left: auto;
+  	margin-right:auto;
+  	max-width: 15em;
+  }
+  .mywork.abouttext {
+/*  	background: linear-gradient(90deg, white 0%, white 100%);*/
+  }
+  .introtext {
+  	padding-top: 1em;
+  	padding-left: 3em;
+  	padding-right: 3em;
+  	align-content: center;
+  }
+  .introtext h1 {
+  	margin-right: auto;
+  	margin-left: auto;
+  	margin-bottom:10px;
+  }
+  .introtext h3 {
+  	width: 90%;
+  	padding-top: 8px;
+    margin-left: 0px;
+  }
+ .introtext h2 {
+ 	padding-top: 10px;
+ 	margin-right: auto;
+  	margin-left: auto;
+  	margin-top: 0px;
+ }
+#aboutslide.innertext {
+ 	margin: 1em;
+ 	width: 100%;
+ }
+ .abouttext {
+ 	width: 100%;
+ 	padding-left: 0;
+ }
+ h1 {
+ 	font-size: 2.5em;
+ }
+ .abouttext img {
+ 	max-width: 20em;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
 	.portfolio-item {
 		padding: 0.3em;
 	}
 	.portfolio-item img {
 		margin-bottom: 1em !important;
+	}
+	.portfoliotitle {
+		width: 100%;
+	}
+	.portfoliotitle h1 {
+		font-size: 2.5em;
+	}
+	.portfoliotitle p {
+		font-size: 3em;
 	}
 	.portfolio-item p {
 		margin-bottom: 0.2em;
@@ -379,7 +815,50 @@ li {
 	.portfolio-item h1 {
 		font-size: 1.2em;
 	}
+  }
+@media screen and (max-width:800px) {
+ 	.abouttext.mywork {
+		background: none;
+		width:50%;
+	}
+	.abouttext.aboutpic {
+		width:50%;
+	}
 }
+@media screen and (max-width: 750px) {
+/*   	.abouttext.mywork {
+		width:100% !important;
+	}
+	.abouttext.aboutpic {
+		width:100% !important;
+	}*/
+}
+@media screen and (max-width: 700px) {
+   	 .portfolio-item2 {
+  	font-size: 0.4em;
+ 	 }
+   	.abouttext.mywork {
+		width:100% !important;
+	}
+	.abouttext.aboutpic {
+		width:100% !important;
+	}
+ }
+ @media screen and (max-width: 620px) {
+ 	.topnav {
+ 		display: block;
+ 	}
+ 	.topnav a.icon {
+ 		display: block; /*makes hamburger nav visible*/
+ 		color: black; 	
+ 		}
+ 	a.activelinks {
+ 		display: none;
+ 	}
+ 	#home {
+/* 		background-color:linear-gradient(180deg, #D3ABC1 100%, white 0%);
+*/ 	}
+ }
 
 @media screen and (max-width: 580px) {
   #navbar {

@@ -6,70 +6,134 @@
 	<meta name="keywords" content="anne kopas, st. thomas">
 	<meta name="description" content="Website of Anne Kopas">
 	<meta name="author" content="Anne Kopas">
-	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style3.css">
 	<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400,500,600,700&display=swap" rel="stylesheet">
 	<title>Anne Kopas</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "20%";
-}
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementsByClassName("topnav").style.padding = "0.5em 0.5em";
+    document.getElementsByClassName("topnav").style.height = "80%";
+    // document.getElementById("navbar").style.background = "rgb(102, 102, 102)";
+    document.getElementsByClassName("active").style.fontSize = "85px";
+  } else {
+    document.getElementsByClassName("topnav").style.padding = "0.5em 0.5em";
+    document.getElementById("logo").style.fontSize = "35px";
+    document.getElementsByClassName("topnav").style.background = "white";
+  }
 }
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "20%";
-    document.getElementById("main").style.marginLeft = "20%";
-    document.getElementById("nav-footer").style.position = "fixed";
-}
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "2em";
-    document.getElementById("nav-footer").style.display = "none";
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script>/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 </script>
 </head>
 
-	<header >
+<header>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">anne m. kopas</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html#aboutslide">about</a>
+    <a href="index.html#articles">articles</a>
+    <a href="#freelance">freelance</a>
+  </div>
+     <a href="index.html#aboutslide" class="activelinks">about</a>
+    <a href="index.html#articles" class="activelinks">writing</a>
+     <a href="#freelance" class="activelinks">freelance</a>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 </header>
-<body >
-	<div id="mySidenav" class="sidenav" style="display:inline;">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="experience.html">Experience</a>
-  <a href="freelance.html">Freelance</a>
-  <p id="nav-footer" style="width:100%;bottom:0px;color:#fff;margin-left:0.25em;">© 2017 Anne Kopas</p>
+<body>
+<div id="slide2" class="freelanceslide">
+<!-- 		<img src="yellow.jpg" id="yellow" style="margin-bottom: 5em;"> -->
+<!-- 	<div class="innertext" id="aboutslide"> -->
+				<h1 style="color:white!important;padding-left: 0px!important;margin-left:auto;margin-right:auto;">how can i help you?</h1>
+		<div class="abouttext proof">
+			<h3>Words matter.</h3>
+			<p>That's the number one thing I've learned in my experience as a professional writer and editor (plus a summa cum laude degree in English and communications/journalism). I'm game for a variety of projects:</p>
+			<ul>
+				<li>feature articles</li>
+				<li>editing</li>
+				<li>content strategy</li>
+				<li>social media</li>
+				<li>web design</li>
+				<li>writing projects</li>
+			</ul>
+			<h3>Why me?</h3>
+			<p>Because I'm genuinely invested in telling stories that matter. Because my time in a newsroom taught me to be deadline-driven. Because I'm a digital native. Because I get excited about style guides. Because content strategy requires a young, fresh take.</p>
+		<h3>But don't just take my word for it.</h3>
+		<p>First place, social issues article &#x7c; 2019 Minnesota Newspaper Association Better Newspaper Contest</p>
+		<p>Second place, arts & entertainment article &#x7c; 2018 Minnesota Newspaper Association Better Newspaper Contest</p>
+		<p>Third place, best website &#x7c; 2018 Minnesota Newspaper Association College Newspaper Contest</p>
+		<p>Communications & Journalism Outstanding Senior Award &#x7c; 2018, University of St. Thomas</p>
+		<p>Northfield Sidewalk Poetry Contest winner, 2015 & 2019</p>
 	</div>
+<div class="abouttext bottom">
+		<h2 class="freelancecta"><a href="articles.html">read my work</a></h2>
+		<h2 class="freelancecta" style="margin-left:15px;margin-right:15px;">  or  </h2>
+		<h2 class="freelancecta"><a href="mailto:annekopas@gmail.com">let's get started</a></h2>
 
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()" style="font-size:3em;color:white;">&#9776;</span>
-	<div id="main">
-		<div id="front-page">
-			<h1>Freelance.</h1>
-			<h1>I do that.</h1>
-			<p style="max-width:30vw;line-height:1.5em;">Have a writing, editing, or web design project that I could help with? Email me at annekopas@gmail.com and we'll work out the details.</p>
-					</div><!--front-page-->
-			<div id="all-icons">
-				<a href="https://twitter.com/annekopas" target="_blank"><div class="socicon-twitter icon"></div></a>
-				<a href="https://www.linkedin.com/in/anne-kopas" target="_blank"><div class="socicon-linkedin icon"></div></a>
-				<a href="https://www.instagram.com/anniekopas/" target="_blank"><div class="socicon-instagram icon"></div></a>
-			</div><!--all-icons-->
-	</div><!--main-->
-
-
+</div><!--about text -->
+</div><!--innertext-->
 
 <footer>
-
+	<div id="footerbody">
+		<p style="padding-right: 2em;">&copy; Anne Kopas 2020</p>
+		<div id="socialicons">
+			<a href="mailto:annekopas@gmail.com">&#xe047</a>
+			<a href="https://twitter.com/annekopas" target="_blank">&#xe0a7</a>
+			<a href="https://www.linkedin.com/in/anne-kopas" target="_blank">&#xe0b9<div class="socicon-linkedin icon"></div></a>
+			<a href="https://www.instagram.com/anniekopas/" target="_blank">&#xe0b8<div class="socicon-instagram icon"></div></a>
+		</div><!--socialicons-->
+	</div><!--footerbody-->
 </footer>
 
 </body>

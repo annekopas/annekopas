@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- no content goes in this section -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="anne kopas, st. thomas">
+	<meta name="description" content="Website of Anne Kopas">
+	<meta name="author" content="Anne Kopas">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Anne Kopas</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0.5em 0.5em";
+    document.getElementById("navbar").style.height = "10%";
+    // document.getElementById("navbar").style.background = "rgb(102, 102, 102)";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "50px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("navbar").style.background = "white";
+  }
+}
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script>/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</head>
+
+	<header>
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">anne m. kopas</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html#aboutslide">about</a>
+    <a href="index.html#articles">articles</a>
+    <a href="#freelance">freelance</a>
+  </div>
+     <a href="index.html#aboutslide" class="activelinks">about</a>
+    <a href="index.html#articles" class="activelinks">writing</a>
+     <a href="#freelance" class="activelinks">freelance</a>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</header>
+<body>
+	<div class="portfolio">
+		<h1 id="projects" class="h1portfolio">articles</h1>
+		<a class="portfolio-link" href="https://www.southernminn.com/faribault_daily_news/news/article_968b1ac3-fddf-5306-8e68-9deb0da9e118.html">
+		<div class="portfolio-item2" style="background-image: url(deni.jpg);object-fit:contain;">
+		<div class="portfoliotitle">
+			<h1>Children’s librarian on a mission to share the joy of reading with young readers</h1>
+			<p>Fleur-de-lis</p>
+				</div>
+				</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/html_7bdf5fe0-42b3-11ea-b97c-47614124ed5a.html">
+		<div class="portfolio-item2" style="background-image: url(forget-me-not.jpg);object-fit:contain;">
+		<div class="portfoliotitle">
+			<h1>After 25 years, Forget-Me-Not still growing Northfield connections via flowers</h1>
+			<p>Northfield NOW</p>
+				</div>
+				</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/faribault_daily_news/html_3b980040-6923-11ea-86b0-5ba00d7bdafc.html">
+		<div class="portfolio-item2" style="background-image: url(lundin.jpg);object-fit:contain;">
+		<div class="portfoliotitle">
+			<h1>Longtime therapist, mental health advocate marks 30 years of changing lives</h1>
+			<p>Fleur-de-lis</p>
+				</div>
+				</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/html_7bdf5fe0-42b3-11ea-b97c-47614124ed5a.html">
+		<div class="portfolio-item2" style="background-image: url(forget-me-not.jpg);object-fit:contain;">
+		<div class="portfoliotitle">
+			<h1>After 25 years, Forget-Me-Not still growing Northfield connections via flowers</h1>
+			<p>Northfield NOW</p>
+				</div>
+				</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/news/article_f02e7d4f-111d-5aaa-9896-4c69cb2c8461.html">
+		<div class="portfolio-item2" style="background-image: url(lowthorp.jpg);">
+			<div class="portfoliotitle">
+			<h1>Tech entrepreneur brings small-town sensibility to big-screen entertainment</h1>
+			<p>Northfield NOW</p>
+		</div>
+		</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="http://www.southernminnscene.com/2018-arts-and-entertainment-year-in-review-creative-placemaking-inclusion-connection/">
+		<div class="portfolio-item2" style="background-image: url(southern-minn-scene-logo.png);">
+			<div class="portfoliotitle">
+			<h1>Arts and entertainment year in review: Creative placemaking, inclusion, connection</h1>
+			<p>Southern Minn SCENE</p>
+		</div>
+		</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="http://www.southernminn.com/faribault_daily_news/news/article_b5a9e9cf-5e99-5771-a04e-078e11218bce.html">
+		<div class="portfolio-item2" style="background-image: url(profile.jpg);">
+			<div class="portfoliotitle">
+			<h1>Profile: 2019 Citizen of the Year finds Faribault's future in its history</h1>
+			<p>Faribault Daily News</p>
+		</div>
+		</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/news/article_10af8cb1-23c0-5fae-b84b-cf592bf6dbb7.html">
+		<div class="portfolio-item2" style="background-image: url(robots.jpg);">
+			<div class="portfoliotitle">
+			<h1>More than an acronym: St. Dominic School expands STEM program across grade levels</h1>
+			<p>Northfield NOW</p>
+		</div>
+	</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/news/article_0491fec0-08f3-5909-98e0-bb407c233294.html">
+		<div class="portfolio-item2" style="background-image: url(alexis.jpg);">
+			<div class="portfoliotitle">
+			<h1>Alexis Valeriano's immigrant experience drives the fight for affordable housing</h1>
+			<p>Northfield News: Portraits</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/the_kenyon_leader/news/article_ee3b7d69-8c76-5702-91e4-ec6cfc33e553.html">
+		<div class="portfolio-item2" style="background-image: url(micah.jpg);">
+			<div class="portfoliotitle">
+			<h1>#MicahStrong: Community support key to Johnson's ongoing recovery</h1>
+			<p>The Kenyon Leader</p>
+		</div>
+		</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/news/article_1c36f6d6-b83e-5fe9-9b89-bfb2a218be48.html">
+		<div class="portfolio-item2" style="background-image: url(legislator.jpg);">
+			<div class="portfoliotitle">
+			<h1>Local legislators share differing views on health care, clean energy at community forum</h1>
+			<p>Northfield News</p>
+		</div>
+		</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.minnesotamonthly.com/food-drink/sioux-chef-challenges-definition-of-local-food-with-indigenous-restaurants/l">
+		<div class="portfolio-item2" style="background-image: url(corn.jpg);">
+			<div class="portfoliotitle">
+			<h1>“Sioux Chef” Challenges Definition of Local Food with Indigenous Restaurants</h1>
+			<p>Minnesota Monthly</p>
+		</div>
+	</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.klobuchar.senate.gov/public/index.cfm/mobile/amy-in-the-news?ID=487D8239-911E-459D-B7BF-619704287597">
+ 		<div class="portfolio-item2" style="background-image: url(klobuchar.jpg);">
+			<div class="portfoliotitle">
+			<h1>Klobuchar staff meets with Northfielders to discuss rising cost of prescription drugs</h1>
+			<p>Northfield News</p>
+			</div>
+		</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/news/article_67817341-026e-5008-b237-0268a1d418c1.html">
+		<div class="portfolio-item2" style="background-image: url(shelter.jpg);">
+			<div class="portfoliotitle">
+			<h1>Give Me Shelter: Solutions to youth homelessness exist, if community can support them</h1>
+			<p>Northfield News</p>
+		</div>
+		</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminn.com/northfield_news/news/article_5a543437-ea35-5997-8824-92c9301182f9.html">
+		<div class="portfolio-item2" style="background-image: url(makerspace.jpg);object-fit:contain;">
+		<div class="portfoliotitle">
+			<h1>Beyond the books: Northfield schools embrace makerspace movement</h1>
+			<p>Northfield NOW</p>
+				</div>
+				</a>
+		</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.southernminnscene.com/mankatos-brewery-boom-is-about-to-begin/">
+		<div class="portfolio-item2" style="background-image: url(mankato.jpg);">
+			<div class="portfoliotitle">
+			<h1>Mankato’s brewery boom is about to begin</h1>
+			<p>Southern Minn Scene</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.minnesotamonthly.com/travel-recreation/st-pauls-european-christmas-market-in-photos/">
+		<div class="portfolio-item2" style="background-image: url(market.jpg);">
+			<div class="portfoliotitle">
+			<h1>St. Paul’s European Christmas Market in Photos</h1>
+			<p>Minnesota Monthly</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="https://www.minnesotamonthly.com/travel-recreation/minnesota-businesses-adapt-to-warmer-winters/">
+		<div class="portfolio-item2" style="background-image: url(snow.jpg);">
+			<div class="portfoliotitle">
+			<h1>Minnesota Businesses Adapt to Warmer Winters</h1>
+			<p>Minnesota Monthly</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<h1 id="projects" class="h1portfolio">other projects</h1>
+		<a class="portfolio-link" href="tommiemedia.com">
+		<div class="portfolio-item2" style="background-image: url(tommiemedia.png);">
+			<div class="portfoliotitle">
+			<h1>TommieMedia</h1>
+			<p style="color:white;">The University of St. Thomas' student news outlet, TommieMedia, uses my award-winning custom-built WordPress theme.</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="tommiemedia.com">
+		<div class="portfolio-item2" style="background-image: url(sarsample.jpg);">
+			<div class="portfoliotitle">
+			<h1>Summit Avenue Review</h1>
+			<p style="color:white;">I designed the 2018 edition of the Summit Avenue Review, a student literary magazine.</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="tommiemedia.com">
+		<div class="portfolio-item2" style="background-image: url(journeys.jpg);">
+			<div class="portfoliotitle">
+			<h1>Journeys</h1>
+			<p style="color:white;">I worked with a team to edit, design, and market Journeys, the Minnesota Literacy Council's annual anthology.</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="tommiemedia.com">
+		<div class="portfolio-item2" style="background-image: url(dandelions.jpg);">
+			<div class="portfoliotitle">
+			<h1>Fiction</h1>
+			<p style="color:white;">I'm currently seeking a literary agent to represent my mythology-inspired young adult novel.</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="tommiemedia.com">
+		<div class="portfolio-item2" style="background-image: url(cactus.jpg);">
+			<div class="portfoliotitle">
+			<h1>Creative Work</h1>
+			<p style="color:white;">My poetry and fiction have appeared in the Summit Avenue Review, the Delta Epsilon Sigma honor society journal, Teen Ink magazine, and more.</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+		<a class="portfolio-link" href="tommiemedia.com">
+		<div class="portfolio-item2" style="background-image: url(poemcrop.jpg);">
+			<div class="portfoliotitle">
+			<h1>Sidewalk Poetry</h1>
+			<p style="color:white;">Three of my poems appear in the sidewalks of Northfield, Minnesota.</p>
+		</div>
+		</a>
+			</div><!--portfolio-item-->
+	</div><!--portfolio-->
+		<div class="portfolio">
+		<div class="project-portfolio">
+</div> <!--portfolio projects-->
+</div>
+<footer>
+	<div id="footerbody">
+		<p style="padding-right: 2em;">&copy; Anne Kopas 2020</p>
+		<div id="socialicons">
+			<a href="mailto:annekopas@gmail.com">&#xe047</a>
+			<a href="https://twitter.com/annekopas" target="_blank">&#xe0a7</a>
+			<a href="https://www.linkedin.com/in/anne-kopas" target="_blank">&#xe0b9<div class="socicon-linkedin icon"></div></a>
+			<a href="https://www.instagram.com/anniekopas/" target="_blank">&#xe0b8<div class="socicon-instagram icon"></div></a>
+		</div><!--socialicons-->
+	</div><!--footerbody-->
+</footer>
+</footer>
+
+</body>
+
+</html>
