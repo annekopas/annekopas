@@ -13,23 +13,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Anne Kopas</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "0.5em 0.5em";
-    document.getElementById("navbar").style.height = "10%";
-    // document.getElementById("navbar").style.background = "rgb(102, 102, 102)";
-    document.getElementById("logo").style.fontSize = "25px";
-  } else {
-    document.getElementById("navbar").style.padding = "50px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar").style.background = "white";
-  }
-}
-</script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -81,9 +64,9 @@ function myFunction() {
     <a href="index.html#articles">articles</a>
     <a href="#freelance">freelance</a>
   </div>
-     <a href="index.html#aboutslide" class="activelinks">about</a>
-    <a href="index.html#articles" class="activelinks">writing</a>
-     <a href="#freelance" class="activelinks">freelance</a>
+     <a href="index.html" class="activelinks">about</a>
+    <a href="articles.html" class="activelinks">writing</a>
+     <a href="freelance.html" class="activelinks">freelance</a>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>

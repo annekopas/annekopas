@@ -14,23 +14,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400,500,600,700&display=swap" rel="stylesheet">
 	<title>Anne Kopas</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementsByClassName("topnav").style.padding = "0.5em 0.5em";
-    document.getElementsByClassName("topnav").style.height = "80%";
-    // document.getElementById("navbar").style.background = "rgb(102, 102, 102)";
-    document.getElementsByClassName("active").style.fontSize = "85px";
-  } else {
-    document.getElementsByClassName("topnav").style.padding = "0.5em 0.5em";
-    document.getElementById("logo").style.fontSize = "35px";
-    document.getElementsByClassName("topnav").style.background = "white";
-  }
-}
-</script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -78,13 +61,13 @@ function myFunction() {
   <a href="index.html" class="active">anne m. kopas</a>
   <!-- Navigation links (hidden by default) -->
   <div id="myLinks">
-    <a href="index.html#aboutslide">about</a>
-    <a href="index.html#articles">articles</a>
+    <a href="index.html">about</a>
+    <a href="artic">articles</a>
     <a href="#freelance">freelance</a>
   </div>
-     <a href="index.html#aboutslide" class="activelinks">about</a>
-    <a href="index.html#articles" class="activelinks">writing</a>
-     <a href="#freelance" class="activelinks">freelance</a>
+     <a href="index.html" class="activelinks">about</a>
+    <a href="articles.html" class="activelinks">writing</a>
+     <a href="freelance.html" class="activelinks">freelance</a>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
