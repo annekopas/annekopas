@@ -911,5 +911,7 @@ a.activelinks {
 		justify-content: center;
 		margin: 0.5em auto !important;
 	}
-
+	.downarrow {
+		max-width: 520px;
+	}
 }
