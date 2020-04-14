@@ -312,7 +312,6 @@ a.activelinks {
 .downarrow {
 	padding-top: 1em;
 	padding-bottom: 1em;
-	max-width: 400px;
 }
 .downarrow a {
 	font-family:'iconmonstr-iconic-font';
