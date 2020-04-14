@@ -312,12 +312,11 @@ a.activelinks {
 .downarrow {
 	padding-top: 1em;
 	padding-bottom: 1em;
+	text-align:center;
 }
 .downarrow a {
 	font-family:'iconmonstr-iconic-font';
 	font-size: 5em;
-	margin-left: 45%;
-	margin-right:45%;
 }
 .parallax1 { 
   /* The image used */
