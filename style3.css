@@ -227,7 +227,7 @@ a.activelinks {
 }
 #home {
 	background: linear-gradient(180deg, #D3ABC1 50%, white 0%);
-	height:100%;
+	height:fit-content;
 }
 .backgroundbox {
 	height: 40%;
@@ -312,6 +312,7 @@ a.activelinks {
 .downarrow {
 	padding-top: 1em;
 	padding-bottom: 1em;
+	max-width: 400px;
 }
 .downarrow a {
 	font-family:'iconmonstr-iconic-font';
