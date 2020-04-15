@@ -780,6 +780,7 @@ a.activelinks {
  }
 .abouttext.proof {
 	width:100%;
+	margin-left: 0px;
 	}
  h1 {
  	font-size: 2.5em;
