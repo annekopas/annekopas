@@ -778,6 +778,11 @@ a.activelinks {
  	width: 100%;
  	padding-left: 0;
  }
+.abouttext.proof {
+	width:100%;
+	margin-left:2em;
+	margin-right:2em;
+	}
  h1 {
  	font-size: 2.5em;
  }
